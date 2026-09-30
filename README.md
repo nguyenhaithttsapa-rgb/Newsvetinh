@@ -1,5 +1,8 @@
 # 🌐 SATELLITE MESH MASTER HUB - KẾT NỐI & QUẢN TRỊ 8 WEB VỆ TINH ĐA ĐÁM MÂY
 
+- 🐙 **GitHub Repository:** [https://github.com/nguyenhaithttsapa-rgb/Newsvetinh](https://github.com/nguyenhaithttsapa-rgb/Newsvetinh)
+- 🚀 **Trực Tuyến (GitHub Pages):** [https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/](https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/)
+
 Hệ thống quản trị và liên kết chéo (Full-Mesh Interlink Network) dành cho mạng lưới 8 website vệ tinh đám mây độc lập, tối ưu truyền dẫn dòng chảy sức mạnh SEO (Link Juice DoFollow) trực tiếp về 2 trang đích trọng điểm:
 - 🎡 **Cổng Công Cụ Vòng Quay & Mini-Game Livestream:** [https://vongquaymayman.web.app](https://vongquaymayman.web.app)
 - 🏔️ **Cổng Thông Tin & Dịch Vụ Du Lịch LaoCaiView:** [https://laocaiview.vn](https://laocaiview.vn)
