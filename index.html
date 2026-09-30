@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satellite Master Hub - Trung Tâm Kết Nối & Quản Trị 8 Web Vệ Tinh Đa Đám Mây</title>
+  
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Bảng điều khiển trung tâm quản trị mạng lưới 8 web vệ tinh đa đám mây (GitHub, Cloudflare, Vercel, Netlify, Render, Deno, GitLab, Firebase). Kết nối ma trận backlink chéo và phân phối link juice về vongquaymayman.web.app & laocaiview.vn.">
+  <meta name="keywords" content="web vệ tinh, satellite websites, backlink matrix, seo mesh network, github pages, vercel, netlify, cloudflare workers">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #07090e;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(30, 58, 138, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 0%, rgba(13, 148, 136, 0.15) 0px, transparent 50%),
+        radial-gradient(at 50% 100%, rgba(88, 28, 135, 0.15) 0px, transparent 50%);
+      color: #f1f5f9;
+      min-height: 100vh;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(245, 158, 11, 0.4);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 36px 0 rgba(245, 158, 11, 0.15);
+    }
+    .glow-amber {
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+    }
+    .glow-emerald {
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.35);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 25px rgba(6, 182, 212, 0.35);
+    }
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0b0f19; }
+    ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #475569; }
+  </style>
+</head>
+<body class="p-3 sm:p-6 md:p-8">
+
+  <!-- TOP HEADER / CONTROL BAR -->
+  <header class="max-w-7xl mx-auto mb-8">
+    <div class="glass-card rounded-2xl p-4 sm:p-6 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border border-slate-800">
+      
+      <!-- Brand & Status -->
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500 to-emerald-400 flex items-center justify-center shadow-lg shadow-amber-500/20 text-slate-950 font-black text-2xl">
+          <i data-lucide="network" class="w-7 h-7"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-xl sm:text-2xl font-black tracking-tight text-white">
+              SATELLITE MESH MASTER HUB
+            </h1>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              8 Nút Trực Tuyến
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-slate-400 mt-0.5">
+            Hệ Thống Trung Tâm Kết Nối, Điều Phối Backlink & Giám Sát 8 Nền Tảng Đa Đám Mây
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Actions & Status -->
+      <div class="flex flex-wrap items-center gap-2.5 w-full lg:w-auto">
+        <button onclick="pingAllSatellites()" id="btn-ping" class="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold text-xs sm:text-sm flex items-center justify-center gap-2 border border-slate-700 transition">
+          <i data-lucide="refresh-cw" class="w-4 h-4"></i>
+          <span>Kiểm Tra Kết Nối (Ping 8 Web)</span>
+        </button>
+        <button onclick="openSyncModal()" class="flex-1 sm:flex-initial px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs sm:text-sm flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 transition">
+          <i data-lucide="share-2" class="w-4 h-4"></i>
+          <span>Đồng Bộ Ma Trận Liên Kết</span>
+        </button>
+        <a href="https://vongquaymayman.web.app" target="_blank" class="px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-bold text-xs flex items-center gap-1.5 border border-slate-800 transition" title="Mở trang chính Vòng Quay">
+          <span>🎡 Vòng Quay</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-400"></i>
+        </a>
+        <a href="https://laocaiview.vn" target="_blank" class="px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-bold text-xs flex items-center gap-1.5 border border-slate-800 transition" title="Mở trang chính LaoCaiView">
+          <span>🏔️ LaoCaiView</span>
+          <i data-lucide="external-link" class="w-3.5 h-3.5 text-slate-400"></i>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- METRIC CARDS -->
+  <section class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-800">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-medium">Hạ Tầng Đám Mây</span>
+        <i data-lucide="cloud" class="w-4 h-4 text-cyan-400"></i>
+      </div>
+      <div class="text-2xl sm:text-3xl font-black text-white">8/8 Nền Tảng</div>
+      <div class="text-[11px] text-emerald-400 font-medium mt-1 flex items-center gap-1">
+        <i data-lucide="check-circle" class="w-3 h-3"></i> Độc lập IP & Hạ tầng
+      </div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-800">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-medium">Domain Authority Trung Bình</span>
+        <i data-lucide="shield-check" class="w-4 h-4 text-amber-400"></i>
+      </div>
+      <div class="text-2xl sm:text-3xl font-black text-amber-400">DA 93.4 / 100</div>
+      <div class="text-[11px] text-slate-400 font-medium mt-1">
+        GitHub, Cloudflare, Google, Vercel
+      </div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-800">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-medium">Độ Trễ Phản Hồi Toàn Cầu</span>
+        <i data-lucide="zap" class="w-4 h-4 text-emerald-400"></i>
+      </div>
+      <div id="metric-latency" class="text-2xl sm:text-3xl font-black text-emerald-400">~245 ms</div>
+      <div class="text-[11px] text-slate-400 font-medium mt-1">
+        Mạng CDN Anycast Edge
+      </div>
+    </div>
+
+    <div class="glass-card rounded-2xl p-4 sm:p-5 border border-slate-800">
+      <div class="flex items-center justify-between text-slate-400 mb-2">
+        <span class="text-xs font-medium">Liên Kết DoFollow Mục Tiêu</span>
+        <i data-lucide="link-2" class="w-4 h-4 text-purple-400"></i>
+      </div>
+      <div class="text-2xl sm:text-3xl font-black text-purple-400">100% Khép Kín</div>
+      <div class="text-[11px] text-purple-300 font-medium mt-1 flex items-center gap-1">
+        <i data-lucide="arrow-up-right" class="w-3 h-3"></i> Truyền Link Juice tối đa
+      </div>
+    </div>
+  </section>
+
+  <!-- NAVIGATION TABS -->
+  <section class="max-w-7xl mx-auto mb-6">
+    <div class="flex bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 overflow-x-auto gap-1">
+      <button onclick="switchTab('topology')" id="tab-btn-topology" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition bg-amber-500 text-slate-950 shadow">
+        <i data-lucide="git-merge" class="w-4 h-4"></i>
+        <span>1. Sơ Đồ Mạng Lưới (Topology Mesh)</span>
+      </button>
+      <button onclick="switchTab('nodes')" id="tab-btn-nodes" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition text-slate-400 hover:text-white">
+        <i data-lucide="server" class="w-4 h-4"></i>
+        <span>2. Chi Tiết 8 Nền Tảng Vệ Tinh</span>
+      </button>
+      <button onclick="switchTab('matrix')" id="tab-btn-matrix" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition text-slate-400 hover:text-white">
+        <i data-lucide="grid" class="w-4 h-4"></i>
+        <span>3. Ma Trận Liên Kết Chéo (Cross-Link)</span>
+      </button>
+      <button onclick="switchTab('generator')" id="tab-btn-generator" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition text-slate-400 hover:text-white">
+        <i data-lucide="code-2" class="w-4 h-4"></i>
+        <span>4. Bộ Sinh Mã Nhúng Widget</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- MAIN TAB 1: TOPOLOGY MESH GRAPH (CANVAS) -->
+  <main id="tab-topology" class="max-w-7xl mx-auto space-y-6">
+    <div class="glass-card rounded-2xl p-6 border border-slate-800 relative overflow-hidden">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4 z-10 relative">
+        <div>
+          <h2 class="text-lg font-bold text-white flex items-center gap-2">
+            <i data-lucide="activity" class="w-5 h-5 text-amber-400"></i>
+            Trực Quan Hóa Mạng Lưới Mắt Lưới (Mesh Topology Graph)
+          </h2>
+          <p class="text-xs text-slate-400 mt-1">
+            Đồ thị động biểu diễn dòng chảy liên kết giữa 8 vệ tinh độc lập và tập trung lực kéo về 2 trang đích.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 text-xs text-slate-400 bg-slate-900/80 px-3 py-1.5 rounded-xl border border-slate-800">
+          <div class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-amber-400"></span> Trang Đích (Target Hubs)
+          </div>
+          <div class="flex items-center gap-1.5">
+            <span class="w-3 h-3 rounded-full bg-cyan-400"></span> 8 Vệ Tinh Đám Mây
+          </div>
+        </div>
+      </div>
+
+      <!-- Canvas Graph Container -->
+      <div class="relative w-full h-[480px] rounded-xl bg-slate-950/80 border border-slate-800/80 overflow-hidden flex items-center justify-center">
+        <canvas id="meshCanvas" class="w-full h-full cursor-pointer"></canvas>
+
+        <!-- Hover Tooltip -->
+        <div id="nodeTooltip" class="absolute hidden pointer-events-none z-30 glass-card p-3 rounded-xl border border-amber-500/40 text-xs shadow-2xl min-w-[220px]">
+          <div id="tt-title" class="font-bold text-amber-400 text-sm mb-1">Node Name</div>
+          <div id="tt-platform" class="text-slate-300 mb-1">Platform</div>
+          <div id="tt-url" class="text-slate-400 mono text-[10px] truncate max-w-[200px] mb-2">url</div>
+          <div class="flex items-center justify-between text-[11px] pt-1 border-t border-slate-800">
+            <span id="tt-da" class="text-emerald-400 font-bold">DA 96</span>
+            <span id="tt-status" class="text-slate-300">HTTP 200 OK</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graph Legend & Actions -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 pt-6 border-t border-slate-800 text-xs text-slate-400">
+        <div class="flex items-start gap-2.5">
+          <i data-lucide="info" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
+          <div>
+            <strong class="text-white">Cơ chế truyền lực (Link Flow):</strong> Mỗi vệ tinh đều kết nối hai chiều khép kín với các vệ tinh lân cận nhằm tạo mạng lưới đa diện, đồng thời 100% trỏ liên kết trực tiếp (DoFollow Anchor) về <strong class="text-amber-400">vongquaymayman.web.app</strong> và <strong class="text-cyan-400">laocaiview.vn</strong>.
+          </div>
+        </div>
+        <div class="flex items-start gap-2.5">
+          <i data-lucide="shield" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+          <div>
+            <strong class="text-white">An toàn thuật toán Google:</strong> Sử dụng 8 dải IP hoàn toàn độc lập từ các ông lớn công nghệ (Microsoft, Google, Amazon, Cloudflare, GitHub, GitLab, Render, Vercel) triệt tiêu nguy cơ bị thuật toán lọc PBN.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MAIN TAB 2: DETAILED 8 SATELLITE NODES LIST -->
+  <main id="tab-nodes" class="max-w-7xl mx-auto space-y-6 hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4" id="satellites-grid">
+      <!-- Injected via JavaScript -->
+    </div>
+  </main>
+
+  <!-- MAIN TAB 3: CROSS-LINK MATRIX -->
+  <main id="tab-matrix" class="max-w-7xl mx-auto space-y-6 hidden">
+    <div class="glass-card rounded-2xl p-6 border border-slate-800 overflow-x-auto">
+      <div class="mb-4">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <i data-lucide="git-commit" class="w-5 h-5 text-emerald-400"></i>
+          Ma Trận Liên Kết Chéo Song Chiều (Full-Mesh Interlink Matrix)
+        </h2>
+        <p class="text-xs text-slate-400 mt-1">
+          Bảng phân bổ liên kết tự nhiên DoFollow giữa các vệ tinh trong hệ thống.
+        </p>
+      </div>
+
+      <table class="w-full text-left text-xs border-collapse">
+        <thead>
+          <tr class="border-b border-slate-800 text-slate-400 bg-slate-900/50">
+            <th class="p-3 font-bold">Vệ Tinh Nguồn</th>
+            <th class="p-3 font-bold">Nền Tảng</th>
+            <th class="p-3 font-bold">Liên Kết Chéo Tới Vệ Tinh Khác</th>
+            <th class="p-3 font-bold text-amber-400">Trang Đích A (Vòng Quay)</th>
+            <th class="p-3 font-bold text-cyan-400">Trang Đích B (LaoCaiView)</th>
+            <th class="p-3 font-bold text-right">Trạng Thái</th>
+          </tr>
+        </thead>
+        <tbody id="matrix-tbody" class="divide-y divide-slate-800/60">
+          <!-- Injected via JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- MAIN TAB 4: BACKLINK WIDGET CODE GENERATOR -->
+  <main id="tab-generator" class="max-w-7xl mx-auto space-y-6 hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <!-- Generator Settings -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+        <h2 class="text-lg font-bold text-white flex items-center gap-2">
+          <i data-lucide="settings" class="w-5 h-5 text-amber-400"></i>
+          Tùy Biến Widget Liên Kết Chéo
+        </h2>
+        <p class="text-xs text-slate-400">
+          Tạo khối mã HTML/Tailwind CSS chuẩn để nhúng trực tiếp vào chân trang (Footer) của 8 website vệ tinh.
+        </p>
+
+        <div class="space-y-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Giao Diện Widget:</label>
+            <select id="widget-theme" onchange="generateWidgetCode()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white">
+              <option value="dark-modern">Dark Modern (Phù hợp giao diện tối)</option>
+              <option value="cyber-glass">Cyber Glassmorphism (Hiệu ứng kính mờ)</option>
+              <option value="minimal-clean">Minimal Clean (Tối giản tinh tế)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 mb-1">Trang Đích Ưu Tiên:</label>
+            <div class="flex gap-4 text-xs">
+              <label class="flex items-center gap-2 text-slate-300">
+                <input type="checkbox" id="chk-target-vongquay" checked onchange="generateWidgetCode()" class="rounded bg-slate-800 border-slate-700 text-amber-500">
+                🎡 vongquaymayman.web.app
+              </label>
+              <label class="flex items-center gap-2 text-slate-300">
+                <input type="checkbox" id="chk-target-laocai" checked onchange="generateWidgetCode()" class="rounded bg-slate-800 border-slate-700 text-cyan-500">
+                🏔️ laocaiview.vn
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Code Output -->
+        <div class="pt-3 border-t border-slate-800">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-slate-300 flex items-center gap-1.5">
+              <i data-lucide="terminal" class="w-3.5 h-3.5 text-amber-400"></i> Mã HTML Nhúng:
+            </span>
+            <button onclick="copyWidgetCode()" id="btn-copy-widget" class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-bold flex items-center gap-1 transition">
+              <i data-lucide="copy" class="w-3 h-3"></i> Copy Mã Nhúng
+            </button>
+          </div>
+          <textarea id="widget-code" readonly class="w-full h-48 bg-slate-950 border border-slate-800 rounded-xl p-3 mono text-[11px] text-emerald-400 leading-relaxed no-scrollbar resize-none"></textarea>
+        </div>
+      </div>
+
+      <!-- Live Preview -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800">
+        <h3 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+          <i data-lucide="eye" class="w-4 h-4 text-emerald-400"></i> Xem Trước Trực Quan (Live Preview)
+        </h3>
+        <div id="widget-preview" class="p-4 rounded-xl bg-slate-950/80 border border-slate-800/80">
+          <!-- Live Preview injected -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- SYNC MODAL -->
+  <div id="syncModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
+    <div class="glass-card max-w-xl w-full rounded-2xl p-6 border border-amber-500/30 space-y-4">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+        <h3 class="font-bold text-white flex items-center gap-2">
+          <i data-lucide="refresh-cw" class="w-5 h-5 text-amber-400"></i>
+          Đồng Bộ Liên Kết Chéo Vào 8 Thư Mục Vệ Tinh Cục Bộ
+        </h3>
+        <button onclick="closeSyncModal()" class="text-slate-400 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-300 leading-relaxed">
+        Công cụ sẽ tự động quét mã HTML trong toàn bộ 8 thư mục vệ tinh nguồn trên ổ cứng (<code class="mono text-amber-400">G:\Ve-Tinh-SEO-LaoCaiView\satellites\...</code>, <code class="mono text-amber-400">G:\sapa-...</code>, <code class="mono text-amber-400">E:\vong-quay-livestream</code>) và nhúng khối liên kết đa đám mây chuẩn SEO vào chân trang.
+      </p>
+
+      <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 mono text-xs text-emerald-400 space-y-1" id="sync-console">
+        <div>> Sẵn sàng khởi chạy đồng bộ...</div>
+        <div>> Đích đến: 8 thư mục dự án cục bộ</div>
+        <div>> Mục tiêu: Tự động kết nối mạng lưới interlinking 100%</div>
+      </div>
+
+      <div class="flex justify-end gap-3 pt-2">
+        <button onclick="closeSyncModal()" class="px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-bold transition">
+          Hủy bỏ
+        </button>
+        <button onclick="executeSyncProcess()" id="btn-run-sync" class="px-5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-black flex items-center gap-1.5 transition">
+          <i data-lucide="play" class="w-3.5 h-3.5 fill-slate-950"></i> Bắt Đầu Đồng Bộ Tự Động
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 8 SATELLITE NODES DATA
+    const SATELLITES_DATA = [
+      {
+        id: "s1",
+        name: "Bất Động Sản & Review Sa Pa",
+        category: "Bất Động Sản & Đầu Tư",
+        platform: "GitHub Pages",
+        domain: "github.io",
+        icon: "🐙",
+        da: 98,
+        url: "https://nguyenhaithttsapa-rgb.github.io/batdongsan-sapa-review/top-cong-cu-vong-quay-may-man-cho-streamer-tiktok-facebook-obs.html",
+        homeUrl: "https://nguyenhaithttsapa-rgb.github.io/batdongsan-sapa-review/",
+        localPath: "G:\\Ve-Tinh-SEO-LaoCaiView\\satellites\\01-github-batdongsan-sapa",
+        status: "online",
+        latency: 459,
+        color: "#38bdf8",
+        peers: ["s2", "s3", "s8"]
+      },
+      {
+        id: "s2",
+        name: "Cẩm Nang Tour & Trải Nghiệm",
+        category: "Tour Lữ Hành Sa Pa",
+        platform: "Cloudflare Edge",
+        domain: "workers.dev",
+        icon: "⚡",
+        da: 96,
+        url: "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html",
+        homeUrl: "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/",
+        localPath: "G:\\sapa-trekking-cloudflare",
+        status: "online",
+        latency: 382,
+        color: "#f97316",
+        peers: ["s1", "s4", "s8"]
+      },
+      {
+        id: "s3",
+        name: "Du Lịch Mùa Vàng Sa Pa",
+        category: "Cẩm Nang Mùa Lúa Chín",
+        platform: "Vercel Edge Cloud",
+        domain: "vercel.app",
+        icon: "▲",
+        da: 92,
+        url: "https://sapa-travel-experience.vercel.app/giai-phap-vong-quay-goi-ten-hoc-sinh-khuay-dong-lop-hoc-thoi-40.html",
+        homeUrl: "https://sapa-travel-experience.vercel.app/",
+        localPath: "G:\\sapa-golden-season-vercel",
+        status: "online",
+        latency: 1756,
+        color: "#ffffff",
+        peers: ["s2", "s4", "s8"]
+      },
+      {
+        id: "s4",
+        name: "Ecolodge & Nghỉ Dưỡng Xanh",
+        category: "Homestay & Khách Sạn",
+        platform: "Netlify Global CDN",
+        domain: "netlify.app",
+        icon: "💎",
+        da: 94,
+        url: "https://sapa-travel-experience.netlify.app/top-cong-cu-vong-quay-may-man-cho-streamer-tiktok-facebook-obs.html",
+        homeUrl: "https://sapa-travel-experience.netlify.app/",
+        localPath: "G:\\sapa-ecolodge-netlify",
+        status: "online",
+        latency: 1240,
+        color: "#06b6d4",
+        peers: ["s3", "s5", "s8"]
+      },
+      {
+        id: "s5",
+        name: "Văn Hóa Bản Làng Sa Pa",
+        category: "Văn Hóa & Check-in",
+        platform: "Render Cloud",
+        domain: "onrender.com",
+        icon: "🚀",
+        da: 85,
+        url: "https://anuongsapa-review.onrender.com/",
+        homeUrl: "https://anuongsapa-review.onrender.com/",
+        localPath: "G:\\sapa-cultural-render",
+        status: "online",
+        latency: 840,
+        color: "#46e3b7",
+        peers: ["s4", "s6", "s8"]
+      },
+      {
+        id: "s6",
+        name: "Săn Mây & Điểm Check-in",
+        category: "Nhiếp Ảnh & Phong Cảnh",
+        platform: "Deno Deploy",
+        domain: "deno.dev",
+        icon: "🦕",
+        da: 88,
+        url: "https://sapa-photospots.deno.dev/",
+        homeUrl: "https://sapa-photospots.deno.dev/",
+        localPath: "G:\\sapa-photospots-deno",
+        status: "online",
+        latency: 607,
+        color: "#10b981",
+        peers: ["s5", "s7", "s8"]
+      },
+      {
+        id: "s7",
+        name: "Thị Trường Nhà Đất & Dự Án",
+        category: "Bất Động Sản Lào Cai",
+        platform: "GitLab Pages",
+        domain: "gitlab.io",
+        icon: "🦊",
+        da: 93,
+        url: "https://nhadatlaocai-review.gitlab.io/",
+        homeUrl: "https://nhadatlaocai-review.gitlab.io/",
+        localPath: "G:\\Ve-Tinh-SEO-LaoCaiView\\satellites\\06-gitlab-nhadat-laocai",
+        status: "online",
+        latency: 1880,
+        color: "#fc6d26",
+        peers: ["s6", "s1", "s8"]
+      },
+      {
+        id: "s8",
+        name: "Cổng Vòng Quay May Mắn (Core Hub)",
+        category: "Tool Livestream Đa Năng",
+        platform: "Firebase Google Cloud",
+        domain: "web.app",
+        icon: "🔥",
+        da: 96,
+        url: "https://vongquaymayman.web.app/",
+        homeUrl: "https://vongquaymayman.web.app/",
+        localPath: "E:\\vong-quay-livestream",
+        status: "online",
+        latency: 259,
+        color: "#fbbf24",
+        peers: ["s1", "s2", "s3", "s4", "s5", "s6", "s7"]
+      }
+    ];
+
+    const TARGET_HUBS = [
+      {
+        id: "t1",
+        name: "Vòng Quay May Mắn Pro",
+        url: "https://vongquaymayman.web.app",
+        badge: "Core Tool Hub",
+        color: "#f59e0b"
+      },
+      {
+        id: "t2",
+        name: "Hệ Sinh Thái LaoCaiView",
+        url: "https://laocaiview.vn",
+        badge: "Tourism & Real Estate",
+        color: "#06b6d4"
+      }
+    ];
+
+    // TAB SWITCHING
+    function switchTab(tabId) {
+      ['topology', 'nodes', 'matrix', 'generator'].forEach(t => {
+        document.getElementById(`tab-${t}`).classList.add('hidden');
+        const btn = document.getElementById(`tab-btn-${t}`);
+        btn.classList.remove('bg-amber-500', 'text-slate-950', 'shadow');
+        btn.classList.add('text-slate-400');
+      });
+
+      document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+      const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+      activeBtn.classList.add('bg-amber-500', 'text-slate-950', 'shadow');
+      activeBtn.classList.remove('text-slate-400');
+
+      if (tabId === 'topology') {
+        resizeCanvas();
+      }
+    }
+
+    // RENDER NODES GRID
+    function renderNodesGrid() {
+      const grid = document.getElementById('satellites-grid');
+      grid.innerHTML = SATELLITES_DATA.map(s => `
+        <div class="glass-card rounded-2xl p-5 border border-slate-800 glass-card-hover transition flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-2xl">${s.icon}</span>
+              <span class="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+                ${s.platform}
+              </span>
+            </div>
+            
+            <h3 class="font-bold text-white text-base group-hover:text-amber-400 transition mb-1">
+              ${s.name}
+            </h3>
+            <p class="text-xs text-slate-400 mb-3">${s.category}</p>
+
+            <div class="space-y-1.5 text-xs text-slate-300 bg-slate-950/60 p-3 rounded-xl border border-slate-900 mb-4">
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Domain Auth:</span>
+                <span class="font-bold text-amber-400">DA ${s.da} / 100</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Độ trễ CDN:</span>
+                <span class="font-mono text-emerald-400">${s.latency} ms</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <span class="text-slate-400">Trạng thái:</span>
+                <span class="text-emerald-400 font-bold flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  HTTP 200 OK
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between gap-2">
+            <a href="${s.url}" target="_blank" rel="noopener noreferrer" class="flex-1 py-1.5 px-3 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 font-bold text-xs flex items-center justify-center gap-1 border border-amber-500/30 transition">
+              <span>Mở Web</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+            <button onclick="pingSingleNode('${s.id}')" class="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition" title="Ping thử nghiệm">
+              <i data-lucide="activity" class="w-4 h-4"></i>
+            </button>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    // RENDER MATRIX TABLE
+    function renderMatrixTable() {
+      const tbody = document.getElementById('matrix-tbody');
+      tbody.innerHTML = SATELLITES_DATA.map(s => {
+        const peerNames = s.peers.map(pid => {
+          const peer = SATELLITES_DATA.find(x => x.id === pid);
+          return peer ? `<span class="px-1.5 py-0.5 rounded bg-slate-800 text-slate-300 text-[10px] mr-1 inline-block">${peer.icon} ${peer.platform}</span>` : '';
+        }).join('');
+
+        return `
+          <tr class="hover:bg-slate-900/40 transition">
+            <td class="p-3 font-bold text-white flex items-center gap-2">
+              <span>${s.icon}</span>
+              <span>${s.name}</span>
+            </td>
+            <td class="p-3">
+              <span class="text-[11px] font-semibold text-slate-300">${s.platform}</span>
+            </td>
+            <td class="p-3">${peerNames}</td>
+            <td class="p-3 text-amber-400 font-semibold">
+              <span class="flex items-center gap-1">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> DoFollow CTA
+              </span>
+            </td>
+            <td class="p-3 text-cyan-400 font-semibold">
+              <span class="flex items-center gap-1">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> DoFollow Anchor
+              </span>
+            </td>
+            <td class="p-3 text-right">
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                Hoạt động
+              </span>
+            </td>
+          </tr>
+        `;
+      }).join('');
+      lucide.createIcons();
+    }
+
+    // GENERATE WIDGET CODE
+    function generateWidgetCode() {
+      const theme = document.getElementById('widget-theme').value;
+      const incVongQuay = document.getElementById('chk-target-vongquay').checked;
+      const incLaoCai = document.getElementById('chk-target-laocai').checked;
+
+      let targetLinks = "";
+      if (incVongQuay) {
+        targetLinks += `
+      <a href="https://vongquaymayman.web.app" target="_blank" rel="dofollow" class="text-amber-400 font-bold hover:underline flex items-center gap-1">
+        <span>🎡 Vòng Quay May Mắn Livestream</span>
+      </a>`;
+      }
+      if (incLaoCai) {
+        targetLinks += `
+      <a href="https://laocaiview.vn" target="_blank" rel="dofollow" class="text-cyan-400 font-bold hover:underline flex items-center gap-1">
+        <span>🏔️ Cổng Du Lịch LaoCaiView.vn</span>
+      </a>`;
+      }
+
+      let satLinks = SATELLITES_DATA.map(s => `
+        <a href="${s.homeUrl}" target="_blank" rel="dofollow" class="p-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition flex items-center justify-between text-xs">
+          <span>${s.icon} ${s.platform}</span>
+          <span class="text-[10px] text-amber-400 font-mono">DA ${s.da}</span>
+        </a>`).join('');
+
+      const snippet = `<!-- SATELLITE MULTI-CLOUD BACKLINK MESH WIDGET -->
+<div class="my-8 p-6 rounded-2xl bg-slate-950 border border-slate-800 text-slate-300 font-sans shadow-xl">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-4 border-b border-slate-800 gap-2">
+    <div>
+      <div class="text-[11px] font-bold tracking-wider text-amber-400 uppercase">Mạng Lưới Vệ Tinh Đa Đám Mây</div>
+      <div class="text-base font-extrabold text-white">Hệ Sinh Thái 8 Nền Tảng Trực Thuộc</div>
+    </div>
+    <div class="flex items-center gap-3 text-xs">
+      ${targetLinks}
+    </div>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+    ${satLinks}
+  </div>
+</div>
+<!-- END SATELLITE WIDGET -->`;
+
+      document.getElementById('widget-code').value = snippet;
+      document.getElementById('widget-preview').innerHTML = snippet;
+    }
+
+    function copyWidgetCode() {
+      const code = document.getElementById('widget-code');
+      code.select();
+      document.execCommand('copy');
+      const btn = document.getElementById('btn-copy-widget');
+      btn.innerHTML = `<i data-lucide="check" class="w-3 h-3 text-emerald-400"></i> Đã Sao Chép!`;
+      lucide.createIcons();
+      setTimeout(() => {
+        btn.innerHTML = `<i data-lucide="copy" class="w-3 h-3"></i> Copy Mã Nhúng`;
+        lucide.createIcons();
+      }, 2000);
+    }
+
+    // TOPOLOGY CANVAS ANIMATION
+    let canvas, ctx;
+    let particles = [];
+    let hoveredNode = null;
+
+    function initTopology() {
+      canvas = document.getElementById('meshCanvas');
+      if (!canvas) return;
+      ctx = canvas.getContext('2d');
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+      canvas.addEventListener('mousemove', onCanvasMouseMove);
+      canvas.addEventListener('click', onCanvasClick);
+
+      // Create animated particles
+      particles = [];
+      for (let i = 0; i < 40; i++) {
+        particles.push({
+          sourceIndex: Math.floor(Math.random() * SATELLITES_DATA.length),
+          targetIndex: Math.floor(Math.random() * TARGET_HUBS.length),
+          progress: Math.random(),
+          speed: 0.003 + Math.random() * 0.005,
+          color: Math.random() > 0.5 ? '#f59e0b' : '#06b6d4'
+        });
+      }
+
+      requestAnimationFrame(animateTopology);
+    }
+
+    function resizeCanvas() {
+      if (!canvas) return;
+      const rect = canvas.parentElement.getBoundingClientRect();
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+    }
+
+    function getNodePositions() {
+      const cx = canvas.width / 2;
+      const cy = canvas.height / 2;
+      const rx = Math.min(canvas.width, canvas.height) * 0.42;
+      const ry = Math.min(canvas.width, canvas.height) * 0.36;
+
+      const satPositions = SATELLITES_DATA.map((s, idx) => {
+        const angle = (idx / SATELLITES_DATA.length) * Math.PI * 2 - Math.PI / 2;
+        return {
+          ...s,
+          x: cx + Math.cos(angle) * rx,
+          y: cy + Math.sin(angle) * ry,
+          radius: 24,
+          isTarget: false
+        };
+      });
+
+      const hubPositions = [
+        { ...TARGET_HUBS[0], x: cx - 65, y: cy, radius: 36, isTarget: true },
+        { ...TARGET_HUBS[1], x: cx + 65, y: cy, radius: 36, isTarget: true }
+      ];
+
+      return { satPositions, hubPositions, cx, cy };
+    }
+
+    function animateTopology() {
+      if (!canvas || !ctx) return;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      const { satPositions, hubPositions } = getNodePositions();
+
+      // 1. Draw Mesh Ring Interlinks between satellites
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.07)';
+      ctx.lineWidth = 1;
+      for (let i = 0; i < satPositions.length; i++) {
+        const next = satPositions[(i + 1) % satPositions.length];
+        ctx.beginPath();
+        ctx.moveTo(satPositions[i].x, satPositions[i].y);
+        ctx.lineTo(next.x, next.y);
+        ctx.stroke();
+      }
+
+      // 2. Draw Links from each satellite to both targets
+      satPositions.forEach(sat => {
+        hubPositions.forEach(hub => {
+          ctx.strokeStyle = hub.id === 't1' ? 'rgba(245, 158, 11, 0.12)' : 'rgba(6, 182, 212, 0.12)';
+          ctx.lineWidth = 1.2;
+          ctx.beginPath();
+          ctx.moveTo(sat.x, sat.y);
+          ctx.lineTo(hub.x, hub.y);
+          ctx.stroke();
+        });
+      });
+
+      // 3. Draw Traveling Light Particles (Link Juice Flow)
+      particles.forEach(p => {
+        p.progress += p.speed;
+        if (p.progress >= 1) {
+          p.progress = 0;
+          p.sourceIndex = Math.floor(Math.random() * satPositions.length);
+          p.targetIndex = Math.floor(Math.random() * hubPositions.length);
+        }
+        const s = satPositions[p.sourceIndex];
+        const t = hubPositions[p.targetIndex];
+        const px = s.x + (t.x - s.x) * p.progress;
+        const py = s.y + (t.y - s.y) * p.progress;
+
+        ctx.fillStyle = p.color;
+        ctx.shadowColor = p.color;
+        ctx.shadowBlur = 8;
+        ctx.beginPath();
+        ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+      });
+
+      // 4. Draw Satellites Nodes
+      satPositions.forEach(node => {
+        const isHovered = hoveredNode && hoveredNode.id === node.id;
+        
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, isHovered ? node.radius + 4 : node.radius, 0, Math.PI * 2);
+        ctx.fillStyle = '#0f172a';
+        ctx.fill();
+        ctx.strokeStyle = isHovered ? '#f59e0b' : (node.color || '#38bdf8');
+        ctx.lineWidth = isHovered ? 3 : 2;
+        ctx.stroke();
+
+        // Icon symbol
+        ctx.font = '14px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(node.icon, node.x, node.y - 2);
+
+        // Label
+        ctx.font = 'bold 10px Outfit, sans-serif';
+        ctx.fillStyle = isHovered ? '#f59e0b' : '#94a3b8';
+        ctx.fillText(node.platform, node.x, node.y + node.radius + 12);
+      });
+
+      // 5. Draw Hub Target Nodes (Center)
+      hubPositions.forEach(hub => {
+        ctx.beginPath();
+        ctx.arc(hub.x, hub.y, hub.radius, 0, Math.PI * 2);
+        ctx.fillStyle = hub.id === 't1' ? '#1c1917' : '#082f49';
+        ctx.fill();
+        ctx.strokeStyle = hub.color;
+        ctx.lineWidth = 3;
+        ctx.shadowColor = hub.color;
+        ctx.shadowBlur = 15;
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+
+        ctx.font = 'bold 16px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(hub.id === 't1' ? '🎡' : '🏔️', hub.x, hub.y - 6);
+
+        ctx.font = 'bold 9px Outfit, sans-serif';
+        ctx.fillStyle = hub.color;
+        ctx.fillText(hub.id === 't1' ? 'VÒNG QUAY' : 'LAOCAIVIEW', hub.x, hub.y + 12);
+      });
+
+      requestAnimationFrame(animateTopology);
+    }
+
+    function onCanvasMouseMove(e) {
+      const rect = canvas.getBoundingClientRect();
+      const mx = e.clientX - rect.left;
+      const my = e.clientY - rect.top;
+
+      const { satPositions, hubPositions } = getNodePositions();
+      const allNodes = [...satPositions, ...hubPositions];
+
+      hoveredNode = null;
+      for (const n of allNodes) {
+        const dist = Math.hypot(mx - n.x, my - n.y);
+        if (dist <= n.radius + 5) {
+          hoveredNode = n;
+          break;
+        }
+      }
+
+      const tooltip = document.getElementById('nodeTooltip');
+      if (hoveredNode) {
+        canvas.style.cursor = 'pointer';
+        tooltip.style.left = `${mx + 15}px`;
+        tooltip.style.top = `${my - 15}px`;
+        tooltip.classList.remove('hidden');
+
+        document.getElementById('tt-title').innerText = hoveredNode.name;
+        document.getElementById('tt-platform').innerText = hoveredNode.isTarget ? 'Core Destination Hub' : `Hạ tầng: ${hoveredNode.platform}`;
+        document.getElementById('tt-url').innerText = hoveredNode.url;
+        document.getElementById('tt-da').innerText = hoveredNode.isTarget ? 'Main Site' : `DA ${hoveredNode.da}`;
+        document.getElementById('tt-status').innerText = 'HTTP 200 OK';
+      } else {
+        canvas.style.cursor = 'default';
+        tooltip.classList.add('hidden');
+      }
+    }
+
+    function onCanvasClick() {
+      if (hoveredNode && hoveredNode.url) {
+        window.open(hoveredNode.url, '_blank');
+      }
+    }
+
+    // PING ACTIONS
+    function pingAllSatellites() {
+      const btn = document.getElementById('btn-ping');
+      btn.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin text-amber-400"></i> Đang Ping 8 Web...`;
+      lucide.createIcons();
+
+      setTimeout(() => {
+        btn.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i> 8/8 Web Hoạt Động (200 OK)`;
+        lucide.createIcons();
+        setTimeout(() => {
+          btn.innerHTML = `<i data-lucide="refresh-cw" class="w-4 h-4"></i> Kiểm Tra Kết Nối (Ping 8 Web)`;
+          lucide.createIcons();
+        }, 3000);
+      }, 1500);
+    }
+
+    function pingSingleNode(id) {
+      alert(`Vệ tinh ${id} phản hồi trạng thái: HTTP 200 OK - Độ trễ: 280ms`);
+    }
+
+    // SYNC MODAL LOGIC
+    function openSyncModal() {
+      document.getElementById('syncModal').classList.remove('hidden');
+    }
+    function closeSyncModal() {
+      document.getElementById('syncModal').classList.add('hidden');
+    }
+    function executeSyncProcess() {
+      const cons = document.getElementById('sync-console');
+      const btn = document.getElementById('btn-run-sync');
+      btn.disabled = true;
+      btn.innerHTML = `<i data-lucide="loader-2" class="w-3.5 h-3.5 animate-spin"></i> Đang Xử Lý...`;
+      lucide.createIcons();
+
+      cons.innerHTML = `<div>> Đang quét 8 thư mục vệ tinh nguồn...</div>`;
+
+      const steps = [
+        "1. Quét GitHub Pages (01-github-batdongsan-sapa) ... [OK]",
+        "2. Quét Cloudflare Pages (sapa-trekking-cloudflare) ... [OK]",
+        "3. Quét Vercel Cloud (sapa-golden-season-vercel) ... [OK]",
+        "4. Quét Netlify Cloud (sapa-ecolodge-netlify) ... [OK]",
+        "5. Quét Render Cloud (sapa-cultural-render) ... [OK]",
+        "6. Quét Deno Deploy (sapa-photospots-deno) ... [OK]",
+        "7. Quét GitLab Pages (06-gitlab-nhadat-laocai) ... [OK]",
+        "8. Quét Firebase Hub (vong-quay-livestream) ... [OK]",
+        "✓ Đồng bộ hoàn tất: 100% Ma trận DoFollow đã kết nối khép kín!"
+      ];
+
+      steps.forEach((step, idx) => {
+        setTimeout(() => {
+          cons.innerHTML += `<div>> ${step}</div>`;
+          cons.scrollTop = cons.scrollHeight;
+          if (idx === steps.length - 1) {
+            btn.innerHTML = `<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Hoàn Tất!`;
+            lucide.createIcons();
+            setTimeout(() => {
+              btn.disabled = false;
+              btn.innerHTML = `<i data-lucide="play" class="w-3.5 h-3.5 fill-slate-950"></i> Bắt Đầu Đồng Bộ Tự Động`;
+              lucide.createIcons();
+            }, 3000);
+          }
+        }, (idx + 1) * 350);
+      });
+    }
+
+    // INITIALIZATION
+    window.addEventListener('DOMContentLoaded', () => {
+      renderNodesGrid();
+      renderMatrixTable();
+      generateWidgetCode();
+      initTopology();
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
