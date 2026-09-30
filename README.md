@@ -1,7 +1,10 @@
 # 🌐 SATELLITE MESH MASTER HUB - KẾT NỐI & QUẢN TRỊ 8 WEB VỆ TINH ĐA ĐÁM MÂY
 
+- ⚡ **Cloudflare Workers (Edge):** [https://newsvetinh.laocaiview-vn.workers.dev](https://newsvetinh.laocaiview-vn.workers.dev)
+- ▲ **Vercel Cloud Edge:** [https://newsvetinh.vercel.app](https://newsvetinh.vercel.app)
 - 🐙 **GitHub Repository:** [https://github.com/nguyenhaithttsapa-rgb/Newsvetinh](https://github.com/nguyenhaithttsapa-rgb/Newsvetinh)
-- 🚀 **Trực Tuyến (GitHub Pages):** [https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/](https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/)
+- 🚀 **GitHub Pages:** [https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/](https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/)
+- 💎 **Netlify Global:** [https://newsvetinh.netlify.app](https://newsvetinh.netlify.app)
 
 Hệ thống quản trị và liên kết chéo (Full-Mesh Interlink Network) dành cho mạng lưới 8 website vệ tinh đám mây độc lập, tối ưu truyền dẫn dòng chảy sức mạnh SEO (Link Juice DoFollow) trực tiếp về 2 trang đích trọng điểm:
 - 🎡 **Cổng Công Cụ Vòng Quay & Mini-Game Livestream:** [https://vongquaymayman.web.app](https://vongquaymayman.web.app)
