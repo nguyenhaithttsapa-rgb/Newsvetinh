@@ -1,9 +1,9 @@
 modules = ["python-3.11", "web"]
-run = "python -m http.server 8080"
+run = "python scripts/automation_master.py"
 hidden = [".git"]
 
 [deployment]
-run = ["python", "-m", "http.server", "8080"]
+run = ["python", "scripts/automation_master.py"]
 deploymentTarget = "cloudrun"
 
 [[ports]]
