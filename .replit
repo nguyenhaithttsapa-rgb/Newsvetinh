@@ -1,0 +1,11 @@
+modules = ["python-3.11", "web"]
+run = "python -m http.server 8080"
+hidden = [".git"]
+
+[deployment]
+run = ["python", "-m", "http.server", "8080"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
