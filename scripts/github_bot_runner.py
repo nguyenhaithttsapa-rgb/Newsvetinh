@@ -416,7 +416,7 @@ def send_telegram_alert(message):
     except Exception as e:
         print(f"[✗] Lỗi gửi Telegram: {e}")
 
-def write_step_summary(sat_results, target_results, article, indexnow_results, ping_results):
+def write_step_summary(sat_results, target_results, article, indexnow_results, ping_results, tier2_article=None):
     summary_file = os.getenv("GITHUB_STEP_SUMMARY")
     if not summary_file:
         return
@@ -463,6 +463,16 @@ def write_step_summary(sat_results, target_results, article, indexnow_results, p
         md.append("**🔗 Anchor Text Bổ Trợ (Semantic Bridge):**\n")
         for sa in article['supporting_anchors']:
             md.append(f"- [{sa['text']}]({sa['url']})\n")
+
+    if tier2_article:
+        md.append("\n## 🏛️ 5. BÀI VIẾT TẦNG 2 XUẤT BẢN TRÊN TELEGRA.PH (DA 91 - BUFFER SHIELD)\n")
+        md.append(f"### **[{tier2_article['title']}]({tier2_article['url']})**\n\n")
+        md.append(f"- **Nền tảng xuất bản:** `{tier2_article['platform']}`\n")
+        md.append(f"- **Thời gian xuất bản:** `{tier2_article['published_at']}`\n")
+        md.append("- **Mục tiêu bơm lực (8 Vệ Tinh Tầng 1):**\n")
+        for ts in tier2_article['target_satellites']:
+            md.append(f"  * [{ts['name']}]({ts['url']})\n")
+
     md.append("\n---\n*Hệ thống được vận hành tự động bởi GitHub Actions Cloud Cron (Microsoft).*")
     
     try:
@@ -474,23 +484,33 @@ def write_step_summary(sat_results, target_results, article, indexnow_results, p
 
 def main():
     print("=" * 80)
-    print("🚀 GITHUB ACTIONS BOT RUNNER v4.0 (AUDITOR - IN-CONTENT LINKS - INDEXNOW)")
+    print("🚀 GITHUB ACTIONS BOT RUNNER v4.0 (AUDITOR - IN-CONTENT LINKS - INDEXNOW - TIER 2)")
     print("=" * 80)
     
     # 1. Audit Satellites & Targets
     sat_results = run_satellite_audit()
     target_results = run_target_audit()
     
-    # 2. Sinh bài viết In-Content Contextual Link
+    # 2. Sinh bài viết In-Content Contextual Link (Tầng 1 -> Tầng 0)
     article = generate_contextual_article()
 
-    # 3. Ép Index siêu tốc bằng IndexNow API
+    # 3. Xuất bản bài viết Tầng 2 trên Telegra.ph (Tầng 2 -> Tầng 1)
+    tier2_article = None
+    try:
+        import sys
+        sys.path.append(os.path.dirname(__file__))
+        from tier2_syndicator import publish_tier2_telegraph
+        tier2_article = publish_tier2_telegraph()
+    except Exception as te:
+        print(f"[!] Không thể xuất bản Tầng 2: {te}")
+
+    # 4. Ép Index siêu tốc bằng IndexNow API
     indexnow_results = submit_indexnow(NETWORK_URLS)
 
-    # 4. Ping sitemap tự động
+    # 5. Ping sitemap tự động
     ping_results = ping_search_engines()
     
-    # 5. Lưu toàn bộ dữ liệu vào thư mục data/
+    # 6. Lưu toàn bộ dữ liệu vào thư mục data/
     os.makedirs("data", exist_ok=True)
     with open("data/health_status.json", "w", encoding="utf-8") as f:
         json.dump({
@@ -508,15 +528,16 @@ def main():
             "key": INDEXNOW_KEY,
             "submitted_urls": len(NETWORK_URLS),
             "results": indexnow_results,
-            "ping_results": ping_results
+            "ping_results": ping_results,
+            "tier2_latest": tier2_article
         }, f, ensure_ascii=False, indent=2)
         
     print("\n[✓] Đã lưu dữ liệu vào data/health_status.json, latest_crawled_news.json & indexnow_status.json")
     
-    # 6. Ghi GitHub Step Summary
-    write_step_summary(sat_results, target_results, article, indexnow_results, ping_results)
+    # 7. Ghi GitHub Step Summary
+    write_step_summary(sat_results, target_results, article, indexnow_results, ping_results, tier2_article)
     
-    # 7. Telegram Alert nếu có lỗi
+    # 8. Telegram Alert nếu có lỗi
     offline_targets = [t['name'] for t in target_results if t['status'] != 'ONLINE']
     if offline_targets:
         send_telegram_alert(f"⚠️ CẢNH BÁO: Phát hiện {len(offline_targets)} website bị lỗi: {', '.join(offline_targets)}")
