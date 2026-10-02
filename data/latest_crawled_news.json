@@ -1,8 +1,48 @@
 {
-  "title": "Xu hướng số hóa trải nghiệm du lịch: Từ minigame livestream đến mã thanh toán VietQR để bàn",
-  "summary": "Các nhà hàng, khách sạn tại Sa Pa đang tích cực áp dụng công cụ vòng quay may mắn tăng tương tác khách hàng cùng bảng mã VietQR để bàn tiện lợi cho thanh toán không tiền mặt.",
-  "target_link": "https://vongquaymayman.web.app",
-  "anchor_text": "Vòng Quay May Mắn Livestream Pro",
-  "crawled_at": "2026-10-02 10:57:15",
-  "status": "published"
+  "id": "art-05",
+  "hub": "lichampro.com",
+  "title": "Tra Cứu Ngày Hoàng Đạo & Hướng Xuất Hành Đại Cát Năm 2026 Cho Doanh Nhân Và Du Khách",
+  "summary": "Xem ngày tốt động thổ làm nhà, khai trương cửa hàng và xuất hành cầu tài lộc theo lịch vạn sự cổ truyền kết hợp thuật toán tính ngày chuẩn xác từng giây.",
+  "content_html": "<p>Việc chọn ngày lành tháng tốt, tra cứu tiết khí và các khung giờ hoàng đạo là nét đẹp văn hóa tâm linh lâu đời của người Á Đông. Để có kết quả chuẩn xác và giao diện dễ tra cứu trên điện thoại, hàng triệu người dùng tin tưởng sử dụng <a href=\"https://lichampro.com\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">Lịch Âm Pro Vạn Niên Tra Cứu Ngày Tốt</a>.</p>\n<p>Đặc biệt với những ai đang chuẩn bị ký hợp đồng chuyển nhượng nhà đất hoặc đầu tư homestay tại Sa Pa, việc đối chiếu ngày giờ giao dịch cùng bảng giá thị trường tại <a href=\"https://laocaiview.vn\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Cổng thông tin LaoCaiView</a> sẽ giúp các thương vụ diễn ra suôn sẻ, tài lộc hanh thông.</p>",
+  "primary_anchor": {
+    "text": "Lịch Âm Pro Vạn Niên Tra Cứu Ngày Tốt",
+    "url": "https://lichampro.com"
+  },
+  "supporting_anchors": [
+    {
+      "text": "Cổng thông tin LaoCaiView",
+      "url": "https://laocaiview.vn"
+    }
+  ],
+  "published_at": "2026-10-02 12:35:40",
+  "status": "in_content_active",
+  "schema_jsonld": {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Tra Cứu Ngày Hoàng Đạo & Hướng Xuất Hành Đại Cát Năm 2026 Cho Doanh Nhân Và Du Khách",
+    "description": "Xem ngày tốt động thổ làm nhà, khai trương cửa hàng và xuất hành cầu tài lộc theo lịch vạn sự cổ truyền kết hợp thuật toán tính ngày chuẩn xác từng giây.",
+    "datePublished": "2026-10-02T12:35:40.971291",
+    "dateModified": "2026-10-02T12:35:40.971299",
+    "mainEntityOfPage": "https://newsvetinh.web.app/",
+    "author": {
+      "@type": "Organization",
+      "name": "Satellite Mesh Network Hub",
+      "url": "https://newsvetinh.web.app"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LaoCaiView Digital Ecosystem",
+      "url": "https://laocaiview.vn",
+      "sameAs": [
+        "https://laocaiview.vn",
+        "https://vongquaymayman.web.app",
+        "https://daodaoreview.com",
+        "https://angicungduoc.food",
+        "https://lichampro.com",
+        "https://tinhluonggrossnet.vn",
+        "https://quickpsd.com",
+        "https://www.taomaqr.online"
+      ]
+    }
+  }
 }
