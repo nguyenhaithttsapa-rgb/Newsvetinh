@@ -36,8 +36,8 @@ WIDGET_HTML = """<!-- SATELLITE MULTI-CLOUD BACKLINK MESH WIDGET (AUTO-INJECTED)
   <!-- HEADER: CORE DESTINATIONS -->
   <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 mb-4 border-b border-slate-800 gap-3">
     <div>
-      <div class="text-[11px] font-bold tracking-wider text-amber-400 uppercase">Mạng Lưới Vệ Tinh Đa Đám Mây & Tiện Ích Số</div>
-      <div class="text-base font-extrabold text-white">Hệ Sinh Thái 14+ Nền Tảng Liên Kết Chéo Chuẩn SEO</div>
+      <div class="text-[11px] font-bold tracking-wider text-amber-400 uppercase">Hạ Tầng Dòng Chảy Liên Kết Đa Đám Mây</div>
+      <div class="text-base font-extrabold text-white">8 Vệ Tinh Độc Lập ➔ Tập Trung Lực Kéo Về 8 Website Chính</div>
     </div>
     <div class="flex flex-wrap items-center gap-3 text-xs">
       <a href="https://vongquaymayman.web.app" target="_blank" rel="dofollow" class="px-3 py-1.5 rounded-lg bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 font-bold border border-amber-500/30 transition flex items-center gap-1.5">
