@@ -1,0 +1,6 @@
+{
+  "deploy": {
+    "app": "newsvetinh",
+    "entrypoint": "main.ts"
+  }
+}
