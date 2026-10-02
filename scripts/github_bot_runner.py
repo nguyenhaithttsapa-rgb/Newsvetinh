@@ -39,7 +39,7 @@ SATELLITES = [
     {"name": "Cloudflare Edge (Tour Sa Pa)", "platform": "Cloudflare Edge", "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html"},
     {"name": "Vercel Cloud (Mùa Vàng)", "platform": "Vercel Cloud", "url": "https://sapa-travel-experience.vercel.app/"},
     {"name": "Netlify Global (Ecolodge)", "platform": "Netlify Global", "url": "https://sapa-travel-experience.netlify.app/"},
-    {"name": "Render Cloud (Văn Hóa)", "platform": "Render Cloud", "url": "https://anuongsapa-review.onrender.com/"},
+    {"name": "Render Cloud (Fansipan & BĐS)", "platform": "Render Cloud", "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"},
     {"name": "Deno Deploy (Săn Mây)", "platform": "Deno Deploy", "url": "https://sapa-photospots.deno.dev/"},
     {"name": "GitLab Pages (Nhà Đất)", "platform": "GitLab Pages", "url": "https://nhadatlaocai-review.gitlab.io/"},
     {"name": "Replit Engine (Hub)", "platform": "Replit Cloud", "url": "https://newsvetinh--laocaiview.replit.app"}
@@ -73,7 +73,7 @@ NETWORK_URLS = [
     "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/",
     "https://sapa-travel-experience.vercel.app/",
     "https://sapa-travel-experience.netlify.app/",
-    "https://anuongsapa-review.onrender.com/",
+    "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html",
     "https://sapa-photospots.deno.dev/",
     "https://nhadatlaocai-review.gitlab.io/"
 ]
