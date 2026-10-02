@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02 14:06:32",
+  "timestamp": "2026-10-02 14:19:46",
   "satellites": [
     {
       "name": "GitHub Pages (BĐS Sa Pa)",
@@ -7,7 +7,7 @@
       "url": "https://nguyenhaithttsapa-rgb.github.io/batdongsan-sapa-review/",
       "status": "ONLINE",
       "code": 200,
-      "latency": 66,
+      "latency": 123,
       "error": ""
     },
     {
@@ -16,7 +16,7 @@
       "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html",
       "status": "ONLINE",
       "code": 200,
-      "latency": 180,
+      "latency": 77,
       "error": ""
     },
     {
@@ -25,7 +25,7 @@
       "url": "https://sapa-travel-experience.vercel.app/",
       "status": "ONLINE",
       "code": 200,
-      "latency": 101,
+      "latency": 178,
       "error": ""
     },
     {
@@ -34,7 +34,7 @@
       "url": "https://sapa-travel-experience.netlify.app/",
       "status": "ONLINE",
       "code": 200,
-      "latency": 566,
+      "latency": 588,
       "error": ""
     },
     {
@@ -43,7 +43,7 @@
       "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html",
       "status": "ONLINE",
       "code": 200,
-      "latency": 148,
+      "latency": 322,
       "error": ""
     },
     {
@@ -52,7 +52,7 @@
       "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/",
       "status": "ONLINE",
       "code": 200,
-      "latency": 161,
+      "latency": 542,
       "error": ""
     },
     {
@@ -61,7 +61,7 @@
       "url": "https://nguyenhaithttsapa-rgb.github.io/nhadatlaocai-review/",
       "status": "ONLINE",
       "code": 200,
-      "latency": 113,
+      "latency": 45,
       "error": ""
     },
     {
@@ -70,7 +70,7 @@
       "url": "https://newsvetinh--laocaiview.replit.app",
       "status": "ONLINE",
       "code": 200,
-      "latency": 496,
+      "latency": 514,
       "error": ""
     }
   ],
@@ -81,7 +81,7 @@
       "url": "https://laocaiview.vn",
       "status": "ONLINE",
       "code": 200,
-      "latency": 2981,
+      "latency": 3034,
       "error": ""
     },
     {
@@ -90,7 +90,7 @@
       "url": "https://vongquaymayman.web.app",
       "status": "ONLINE",
       "code": 200,
-      "latency": 161,
+      "latency": 114,
       "error": ""
     },
     {
@@ -99,7 +99,7 @@
       "url": "https://daodaoreview.com",
       "status": "OFFLINE",
       "code": 0,
-      "latency": 111,
+      "latency": 63,
       "error": "HTTP Error 403: Forbidden"
     },
     {
@@ -108,7 +108,7 @@
       "url": "https://angicungduoc.food",
       "status": "ONLINE",
       "code": 200,
-      "latency": 203,
+      "latency": 211,
       "error": ""
     },
     {
@@ -117,7 +117,7 @@
       "url": "https://lichampro.com",
       "status": "ONLINE",
       "code": 200,
-      "latency": 158,
+      "latency": 118,
       "error": ""
     },
     {
@@ -126,7 +126,7 @@
       "url": "https://tinhluonggrossnet.vn",
       "status": "ONLINE",
       "code": 200,
-      "latency": 603,
+      "latency": 571,
       "error": ""
     },
     {
@@ -135,7 +135,7 @@
       "url": "https://quickpsd.com",
       "status": "ONLINE",
       "code": 200,
-      "latency": 266,
+      "latency": 176,
       "error": ""
     },
     {
@@ -144,7 +144,7 @@
       "url": "https://www.taomaqr.online",
       "status": "ONLINE",
       "code": 200,
-      "latency": 82,
+      "latency": 137,
       "error": ""
     }
   ]

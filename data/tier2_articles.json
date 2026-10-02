@@ -1,6 +1,22 @@
 [
   {
     "title": "Top Tọa Độ Săn Mây Đẹp Như Tranh Vẽ & Góc Check-in Sống Ảo Triệu View Sa Pa",
+    "url": "https://telegra.ph/Top-Tọa-Độ-Săn-Mây-Đẹp-Như-Tranh-Vẽ--Góc-Check-in-Sống-Ảo-Triệu-View-Sa-Pa-10-02-2",
+    "target_satellites": [
+      {
+        "name": "Deno Deploy (Săn Mây)",
+        "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"
+      },
+      {
+        "name": "Vercel Cloud (Mùa Vàng)",
+        "url": "https://sapa-travel-experience.vercel.app/"
+      }
+    ],
+    "published_at": "2026-10-02 14:19:44",
+    "platform": "Telegra.ph (Telegram API - DA 91)"
+  },
+  {
+    "title": "Top Tọa Độ Săn Mây Đẹp Như Tranh Vẽ & Góc Check-in Sống Ảo Triệu View Sa Pa",
     "url": "https://telegra.ph/Top-Tọa-Độ-Săn-Mây-Đẹp-Như-Tranh-Vẽ--Góc-Check-in-Sống-Ảo-Triệu-View-Sa-Pa-10-02",
     "target_satellites": [
       {
