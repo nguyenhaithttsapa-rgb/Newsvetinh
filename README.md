@@ -2,8 +2,11 @@
 
 - ⚡ **Cloudflare Workers (Edge):** [https://newsvetinh.laocaiview-vn.workers.dev](https://newsvetinh.laocaiview-vn.workers.dev)
 - ▲ **Vercel Cloud Edge:** [https://newsvetinh.vercel.app](https://newsvetinh.vercel.app)
+- 🔥 **Firebase Google Cloud:** [https://newsvetinh.web.app](https://newsvetinh.web.app)
+- 🚀 **Render Cloud:** [https://newsvetinh.onrender.com](https://newsvetinh.onrender.com)
 - 🐙 **GitHub Repository:** [https://github.com/nguyenhaithttsapa-rgb/Newsvetinh](https://github.com/nguyenhaithttsapa-rgb/Newsvetinh)
-- 🚀 **GitHub Pages:** [https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/](https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/)
+- 🌐 **GitHub Pages:** [https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/](https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/)
+- 💻 **Replit (1-Click Run):** [https://replit.com/new/github/nguyenhaithttsapa-rgb/Newsvetinh](https://replit.com/new/github/nguyenhaithttsapa-rgb/Newsvetinh)
 - 💎 **Netlify Global:** [https://newsvetinh.netlify.app](https://newsvetinh.netlify.app)
 
 Hệ thống quản trị và liên kết chéo (Full-Mesh Interlink Network) dành cho mạng lưới 8 website vệ tinh đám mây độc lập, tối ưu truyền dẫn dòng chảy sức mạnh SEO (Link Juice DoFollow) trực tiếp về 2 trang đích trọng điểm:
