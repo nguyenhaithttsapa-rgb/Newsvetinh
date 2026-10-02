@@ -111,7 +111,7 @@ hubs = [
     ('Cloudflare Worker Newsvetinh', 'https://newsvetinh.laocaiview-vn.workers.dev'),
     ('Render Newsvetinh', 'https://newsvetinh.onrender.com'),
     ('GitHub Pages Newsvetinh', 'https://nguyenhaithttsapa-rgb.github.io/Newsvetinh/'),
-    ('Replit App Newsvetinh', 'https://newsvetinh.replit.app'),
+    ('Replit App Newsvetinh', 'https://newsvetinh--laocaiview.replit.app'),
     ('Target Site LaoCaiView', 'https://laocaiview.vn')
 ]
 

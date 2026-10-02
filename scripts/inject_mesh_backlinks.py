@@ -136,12 +136,28 @@ WIDGET_HTML = """<!-- SATELLITE MULTI-CLOUD BACKLINK MESH WIDGET (AUTO-INJECTED)
         <span class="font-bold text-[11px]">🦊 GitLab</span>
         <span class="text-[9px] text-amber-400 font-mono">DA 93</span>
       </a>
-      <a href="https://newsvetinh.replit.app" target="_blank" rel="dofollow" class="p-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition flex flex-col justify-between">
+      <a href="https://newsvetinh--laocaiview.replit.app" target="_blank" rel="dofollow" class="p-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition flex flex-col justify-between">
         <span class="font-bold text-[11px]">⚡ Replit</span>
         <span class="text-[9px] text-amber-400 font-mono">DA 91</span>
       </a>
     </div>
   </div>
+</div>
+
+<!-- FLOATING REAL-TRAFFIC BRIDGE (TỰ ĐỘNG CHUYỂN HƯỚNG TRAFFIC VỀ 8 WEB CHÍNH) -->
+<div id="traffic-flow-dock" style="position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:999999;background:rgba(15,23,42,0.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(245,158,11,0.5);border-radius:9999px;padding:6px 14px;box-shadow:0 12px 36px rgba(0,0,0,0.6);display:flex;align-items:center;gap:8px;font-family:system-ui,-apple-system,sans-serif;max-width:96vw;overflow-x:auto;">
+  <span style="font-size:11px;font-weight:900;color:#fbbf24;white-space:nowrap;display:flex;align-items:center;gap:4px;padding-right:4px;border-right:1px solid rgba(255,255,255,0.15);">
+    <span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b981;"></span>
+    8 WEB CỦA TÔI:
+  </span>
+  <a href="https://laocaiview.vn" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#38bdf8;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(56,189,248,0.12);">🏔️ LaoCaiView</a>
+  <a href="https://vongquaymayman.web.app" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#fbbf24;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(251,191,36,0.12);">🎡 Vòng Quay</a>
+  <a href="https://daodaoreview.com" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#f472b6;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(244,114,182,0.12);">🎬 Đao Đao</a>
+  <a href="https://angicungduoc.food" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#fb923c;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(251,146,60,0.12);">🍜 Ăn Gì Food</a>
+  <a href="https://lichampro.com" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#c084fc;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(192,132,252,0.12);">📅 Lịch Âm Pro</a>
+  <a href="https://tinhluonggrossnet.vn" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#34d399;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(52,211,153,0.12);">💰 Lương Gross Net</a>
+  <a href="https://quickpsd.com" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#60a5fa;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(96,165,250,0.12);">🎨 QuickPsd</a>
+  <a href="https://www.taomaqr.online" target="_blank" rel="dofollow" style="display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:700;color:#2dd4bf;text-decoration:none;white-space:nowrap;padding:3px 9px;border-radius:8px;background:rgba(45,212,191,0.12);">📱 Mã VietQR</a>
 </div>
 <!-- END SATELLITE WIDGET -->"""
 
