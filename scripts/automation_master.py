@@ -39,7 +39,7 @@ SATELLITES = [
     {"name": "Render Cloud (Văn Hóa Sa Pa)", "url": "https://anuongsapa-review.onrender.com/"},
     {"name": "Firebase Hub (Vòng Quay May Mắn)", "url": "https://vongquaymayman.web.app/"},
     {"name": "Newsvetinh Hub (Firebase)", "url": "https://newsvetinh.web.app"},
-    {"name": "Replit Engine (Newsvetinh)", "url": "https://newsvetinh--laocaiview.replit.app"},
+    {"name": "Replit Engine (Newsvetinh)", "url": "https://newsvetinh.replit.app"},
     {"name": "LaoCaiView Ecosystem (Target)", "url": "https://laocaiview.vn"},
     {"name": "Đao Đao Review Anime", "url": "https://daodaoreview.com"},
     {"name": "Ăn Gì Cũng Được Food", "url": "https://angicungduoc.food"},

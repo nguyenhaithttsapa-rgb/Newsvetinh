@@ -136,7 +136,7 @@ WIDGET_HTML = """<!-- SATELLITE MULTI-CLOUD BACKLINK MESH WIDGET (AUTO-INJECTED)
         <span class="font-bold text-[11px]">🦊 GitLab</span>
         <span class="text-[9px] text-amber-400 font-mono">DA 93</span>
       </a>
-      <a href="https://newsvetinh--laocaiview.replit.app" target="_blank" rel="dofollow" class="p-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition flex flex-col justify-between">
+      <a href="https://newsvetinh.replit.app" target="_blank" rel="dofollow" class="p-2 rounded-lg bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition flex flex-col justify-between">
         <span class="font-bold text-[11px]">⚡ Replit</span>
         <span class="text-[9px] text-amber-400 font-mono">DA 91</span>
       </a>
