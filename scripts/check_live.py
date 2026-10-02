@@ -125,3 +125,28 @@ for label, url in hubs:
     except Exception as e:
         lat = int((time.time() - start) * 1000)
         print(f"[ERR]        {label:<30} | {lat:>4}ms | Lỗi: {e} | {url}")
+
+print("\n" + "=" * 80)
+print("KIỂM TRA 6 WEBSITE TIỆN ÍCH & NỘI DUNG TÊN MIỀN RIÊNG MỚI KẾT NỐI")
+print("=" * 80)
+
+utility_sites = [
+    ('Đao Đao Review Anime', 'https://daodaoreview.com'),
+    ('Ăn Gì Cũng Được Food', 'https://angicungduoc.food'),
+    ('Lịch Âm Pro Vạn Niên', 'https://lichampro.com'),
+    ('Tính Lương Gross Net 2026', 'https://tinhluonggrossnet.vn'),
+    ('QuickPsd Graphic Suite', 'https://quickpsd.com'),
+    ('Tạo Mã QR Online VietQR', 'https://www.taomaqr.online')
+]
+
+for label, url in utility_sites:
+    start = time.time()
+    try:
+        req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
+        with urllib.request.urlopen(req, timeout=10, context=ctx) as r:
+            lat = int((time.time() - start) * 1000)
+            print(f"[{r.getcode()} ONLINE] {label:<30} | {lat:>4}ms | {url}")
+    except Exception as e:
+        lat = int((time.time() - start) * 1000)
+        print(f"[ERR]        {label:<30} | {lat:>4}ms | Lỗi: {e} | {url}")
+

@@ -30,16 +30,23 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
-# 8 SATELLITE TARGETS
+# MESH MONITORING TARGETS (15 NODES)
 SATELLITES = [
     {"name": "GitHub Pages (BĐS Sa Pa)", "url": "https://nguyenhaithttsapa-rgb.github.io/batdongsan-sapa-review/"},
     {"name": "Cloudflare Workers (Tour Sa Pa)", "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html"},
     {"name": "Vercel Cloud (Mùa Vàng Sa Pa)", "url": "https://sapa-travel-experience.vercel.app/"},
     {"name": "Netlify Global (Ecolodge Sa Pa)", "url": "https://sapa-travel-experience.netlify.app/"},
-    {"name": "Render Cloud (Văn Hóa Sa Pa)", "url": "https://sapa-batdongsan-live.onrender.com/"},
+    {"name": "Render Cloud (Văn Hóa Sa Pa)", "url": "https://anuongsapa-review.onrender.com/"},
     {"name": "Firebase Hub (Vòng Quay May Mắn)", "url": "https://vongquaymayman.web.app/"},
     {"name": "Newsvetinh Hub (Firebase)", "url": "https://newsvetinh.web.app"},
-    {"name": "LaoCaiView Ecosystem (Target)", "url": "https://laocaiview.vn"}
+    {"name": "Replit Engine (Newsvetinh)", "url": "https://newsvetinh--laocaiview.replit.app"},
+    {"name": "LaoCaiView Ecosystem (Target)", "url": "https://laocaiview.vn"},
+    {"name": "Đao Đao Review Anime", "url": "https://daodaoreview.com"},
+    {"name": "Ăn Gì Cũng Được Food", "url": "https://angicungduoc.food"},
+    {"name": "Lịch Âm Pro Vạn Niên", "url": "https://lichampro.com"},
+    {"name": "Tính Lương Gross Net 2026", "url": "https://tinhluonggrossnet.vn"},
+    {"name": "QuickPsd Graphic Suite", "url": "https://quickpsd.com"},
+    {"name": "Tạo Mã QR Online VietQR", "url": "https://www.taomaqr.online"}
 ]
 
 # CONFIGURATION
