@@ -416,6 +416,40 @@ def send_telegram_alert(message):
     except Exception as e:
         print(f"[✗] Lỗi gửi Telegram: {e}")
 
+def trigger_custom_webhook(article, tier2_article=None):
+    webhook_url = os.getenv("CUSTOM_WEBHOOK_URL") or os.getenv("MAKE_WEBHOOK_URL")
+    if not webhook_url:
+        print("[ℹ️] Bỏ qua Custom Webhook (chưa đặt biến CUSTOM_WEBHOOK_URL trong Secrets/.env)")
+        return False
+    
+    payload = {
+        "event": "new_seo_article_published",
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "title": article.get("title", ""),
+        "summary": article.get("summary", ""),
+        "url": article.get("primary_anchor", {}).get("url", "https://newsvetinh.web.app"),
+        "anchor_text": article.get("primary_anchor", {}).get("text", ""),
+        "image": article.get("featured_image", "https://images.unsplash.com/photo-1528181304800-259b08848526?w=1200"),
+        "tier2_url": tier2_article.get("url", "") if tier2_article else "",
+        "tier2_title": tier2_article.get("title", "") if tier2_article else "",
+        "hub_url": "https://newsvetinh.web.app"
+    }
+    
+    data_bytes = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    req = urllib.request.Request(
+        webhook_url,
+        data=data_bytes,
+        headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": "SatelliteMesh-SocialBooster/4.0"}
+    )
+    
+    try:
+        with urllib.request.urlopen(req, timeout=15, context=ctx) as r:
+            print(f"[✓] Đã bắn Custom Webhook thành công (HTTP {r.getcode()}) tới: {webhook_url[:35]}...")
+            return True
+    except Exception as e:
+        print(f"[✗] Lỗi kích hoạt Custom Webhook: {e}")
+        return False
+
 def write_step_summary(sat_results, target_results, article, indexnow_results, ping_results, tier2_article=None):
     summary_file = os.getenv("GITHUB_STEP_SUMMARY")
     if not summary_file:
@@ -537,7 +571,10 @@ def main():
     # 7. Ghi GitHub Step Summary
     write_step_summary(sat_results, target_results, article, indexnow_results, ping_results, tier2_article)
     
-    # 8. Telegram Alert nếu có lỗi
+    # 8. Kích hoạt Custom Webhook (Make.com / IFTTT / Zapier Social Booster)
+    trigger_custom_webhook(article, tier2_article)
+
+    # 9. Telegram Alert nếu có lỗi
     offline_targets = [t['name'] for t in target_results if t['status'] != 'ONLINE']
     if offline_targets:
         send_telegram_alert(f"⚠️ CẢNH BÁO: Phát hiện {len(offline_targets)} website bị lỗi: {', '.join(offline_targets)}")
