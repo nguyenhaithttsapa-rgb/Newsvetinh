@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02 12:35:42",
+  "timestamp": "2026-10-02 13:03:32",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 521,
+      "latency": 585,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 519,
+      "latency": 450,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,13 +24,13 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 265,
+      "latency": 246,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 87,
+      "latency": 44,
       "success": false
     }
   ]
