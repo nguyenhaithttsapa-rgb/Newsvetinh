@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-02 15:57:34",
+  "timestamp": "2026-10-02 16:32:08",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 438,
+      "latency": 527,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 411,
+      "latency": 404,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,30 +24,30 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 134,
+      "latency": 191,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 26,
+      "latency": 37,
       "success": false
     }
   ],
   "tier2_latest": {
-    "title": "Giải Pháp Ứng Dụng Thuật Toán CSPRNG & Vòng Quay May Mắn Giữ Chân Người Xem Livestream",
-    "url": "https://telegra.ph/Giải-Pháp-Ứng-Dụng-Thuật-Toán-CSPRNG--Vòng-Quay-May-Mắn-Giữ-Chân-Người-Xem-Livestream-10-02",
+    "title": "Cẩm Nang Toàn Tập Chinh Phục Đỉnh Fansipan & Kinh Nghiệm Mua Vé Cáp Treo 2026",
+    "url": "https://telegra.ph/Cẩm-Nang-Toàn-Tập-Chinh-Phục-Đỉnh-Fansipan--Kinh-Nghiệm-Mua-Vé-Cáp-Treo-2026-10-02",
     "target_satellites": [
       {
-        "name": "Netlify Global (Ecolodge)",
-        "url": "https://sapa-travel-experience.netlify.app/"
+        "name": "Render Cloud (Fansipan & BĐS)",
+        "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"
       },
       {
-        "name": "Replit Engine (Hub)",
-        "url": "https://newsvetinh--laocaiview.replit.app"
+        "name": "Cloudflare Edge (Tour Sa Pa)",
+        "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/"
       }
     ],
-    "published_at": "2026-10-02 15:57:32",
+    "published_at": "2026-10-02 16:32:07",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
