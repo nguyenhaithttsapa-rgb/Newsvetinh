@@ -1,0 +1,53 @@
+name: 24/7 Automation Mesh Bot (Audit & News Crawler)
+
+on:
+  schedule:
+    # Chạy tự động mỗi 1 giờ (24 lần / ngày) trên Cloud của Microsoft
+    - cron: '0 * * * *'
+  workflow_dispatch: # Cho phép bấm chạy thủ công bất cứ lúc nào
+  push:
+    paths:
+      - 'scripts/github_bot_runner.py'
+      - '.github/workflows/automation_cron.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: automation-cron
+  cancel-in-progress: true
+
+jobs:
+  automation-runner:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Tải Mã Nguồn Repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Khởi Tạo Môi Trường Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+        continue-on-error: true
+
+      - name: 🚀 Chạy Bot Tự Động Hóa (Ping 16 Nodes & Cào Tin BĐS)
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python scripts/github_bot_runner.py
+
+      - name: 💾 Tự Động Lưu Dữ Liệu & Nhật Ký Lên GitHub
+        run: |
+          git config --global user.name "GitHub Actions Automation Bot"
+          git config --global user.email "actions@github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "Không có dữ liệu mới cần commit."
+          else
+            git commit -m "chore(auto): update health status & crawled news [skip ci]"
+            git push origin main
+          fi
