@@ -3,4 +3,5 @@ Allow: /
 Disallow: /scripts/
 Disallow: /docs/
 
+Sitemap: https://newsvetinh.web.app/sitemap.xml
 Sitemap: https://vongquaymayman.web.app/sitemap.xml

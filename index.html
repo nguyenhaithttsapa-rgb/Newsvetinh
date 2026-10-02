@@ -178,6 +178,10 @@
         <i data-lucide="code-2" class="w-4 h-4"></i>
         <span>4. Bộ Sinh Mã Nhúng Widget</span>
       </button>
+      <button onclick="switchTab('turbo')" id="tab-btn-turbo" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold flex items-center gap-2 transition text-slate-400 hover:text-white">
+        <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i>
+        <span>5. Bơm Lực SEO & IndexNow</span>
+      </button>
     </div>
   </section>
 
@@ -340,6 +344,236 @@
       </div>
 
     </div>
+  </main>
+
+  <!-- MAIN TAB 5: SEO TURBOCHARGER & INDEXNOW ENGINE -->
+  <main id="tab-turbo" class="max-w-7xl mx-auto space-y-6 hidden">
+    <!-- Hero Banner -->
+    <div class="glass-card rounded-2xl p-6 border border-amber-500/30 relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-black bg-amber-500/20 text-amber-400 border border-amber-500/30 flex items-center gap-1.5">
+              <i data-lucide="zap" class="w-3.5 h-3.5"></i> CÔNG NGHỆ BƠM LỰC SEO THẾ HỆ MỚI v4.0
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+              IndexNow Protocol Active
+            </span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-black text-white">
+            Điều Phối Dòng Chảy PageRank Ngữ Cảnh & Ép Index Tức Thì
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-3xl leading-relaxed">
+            Nâng cấp từ link chân trang tĩnh (Footer Links) sang <strong class="text-amber-400">In-Content Contextual Backlinks</strong> (link tự nhiên nằm giữa câu văn của bài viết) kết hợp giao thức <strong class="text-cyan-400">IndexNow API</strong> ép Bing, Yandex và các máy chủ tìm kiếm cào và lập chỉ mục ngay trong 5 - 15 phút.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <button onclick="triggerIndexNowPingUI()" id="btn-trigger-indexnow" class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-amber-500/20 transition">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Kích Hoạt IndexNow Ping Ngay</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Pillars Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6 pt-6 border-t border-slate-800">
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="text-xs text-slate-400 flex items-center gap-1.5 mb-1">
+            <i data-lucide="file-text" class="w-4 h-4 text-amber-400"></i> In-Content Contextual
+          </div>
+          <div class="text-lg font-black text-white">Trọng Số x5 - x10</div>
+          <p class="text-[11px] text-slate-400 mt-1">Google đánh giá cao link tự nhiên nằm trong bài viết hơn hẳn link chân trang.</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="text-xs text-slate-400 flex items-center gap-1.5 mb-1">
+            <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i> IndexNow Protocol
+          </div>
+          <div class="text-lg font-black text-cyan-400">Index Trong 5 - 15 Phút</div>
+          <p class="text-[11px] text-slate-400 mt-1">Báo trực tiếp cho máy chủ Bing/Yandex cào ngay không cần chờ bot tự mò.</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="text-xs text-slate-400 flex items-center gap-1.5 mb-1">
+            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Tỷ Lệ Vàng Anchor
+          </div>
+          <div class="text-lg font-black text-emerald-400">50% - 30% - 20%</div>
+          <p class="text-[11px] text-slate-400 mt-1">50% Thương hiệu, 30% LSI dài, 20% link trần - Tuyệt đối an toàn trước Penguin.</p>
+        </div>
+
+        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+          <div class="text-xs text-slate-400 flex items-center gap-1.5 mb-1">
+            <i data-lucide="code" class="w-4 h-4 text-purple-400"></i> Schema Graph JSON-LD
+          </div>
+          <div class="text-lg font-black text-purple-400">Thực Thể Liên Kết</div>
+          <p class="text-[11px] text-slate-400 mt-1">Khai báo sameAs định danh 8 web thuộc cùng hệ sinh thái thương hiệu uy tín.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live In-Content News & Backlink Flow -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Article View (2 Columns) -->
+      <div class="lg:col-span-2 glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+            <h3 class="font-extrabold text-white text-base">
+              BÀI VIẾT ĐIỀU PHỐI BACKLINK NGỮ CẢNH ĐANG PHÁT SÓNG
+            </h3>
+          </div>
+          <span id="news-time-badge" class="text-xs text-slate-400 mono">Cập nhật mỗi giờ</span>
+        </div>
+
+        <div class="space-y-3">
+          <h4 id="news-title" class="text-lg sm:text-xl font-bold text-amber-400 leading-snug">
+            Đang tải dữ liệu bài viết mới nhất...
+          </h4>
+          <p id="news-summary" class="text-xs sm:text-sm text-slate-300 italic border-l-2 border-amber-500 pl-3">
+            Tóm tắt bài viết...
+          </p>
+          <div id="news-content" class="text-xs sm:text-sm text-slate-300 space-y-2 leading-relaxed bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
+            Đang tải nội dung...
+          </div>
+        </div>
+
+        <!-- Backlink Flow Badges -->
+        <div class="pt-3 border-t border-slate-800">
+          <div class="text-xs font-bold text-slate-400 mb-2">Các Web Nhận Dòng Chảy PageRank Trong Bài Viết Này:</div>
+          <div id="news-anchors-list" class="flex flex-wrap gap-2">
+            <!-- Injected via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- IndexNow & Health Status (1 Column) -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+            <h3 class="font-extrabold text-white text-sm flex items-center gap-2">
+              <i data-lucide="cpu" class="w-4 h-4 text-cyan-400"></i>
+              Giao Thức IndexNow & Xác Thực
+            </h3>
+            <span class="text-[10px] mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">Verified</span>
+          </div>
+
+          <div class="space-y-3 text-xs">
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1">
+              <div class="text-slate-400">Host Xác Thực:</div>
+              <div class="text-white font-bold mono">newsvetinh.web.app</div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1">
+              <div class="text-slate-400">Tệp Khóa Xác Thực (IndexNow Key):</div>
+              <div class="text-emerald-400 font-bold mono truncate text-[11px]">e89f2a41bc7d45e0892a5b6c3d1f8e90.txt</div>
+              <a href="https://newsvetinh.web.app/e89f2a41bc7d45e0892a5b6c3d1f8e90.txt" target="_blank" class="text-[10px] text-cyan-400 hover:underline flex items-center gap-1 mt-1">
+                <i data-lucide="external-link" class="w-3 h-3"></i> Kiểm tra tệp trực tiếp (200 OK)
+              </a>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 space-y-1">
+              <div class="text-slate-400">Hạ Tầng Ép Index:</div>
+              <div class="text-white font-medium flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Microsoft Bing IndexNow API
+              </div>
+              <div class="text-white font-medium flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> IndexNow Global Engine (Yandex/Seznam)
+              </div>
+              <div class="text-white font-medium flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span> GitHub Actions Cron 24/7 (1h/lần)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs">
+          <i data-lucide="info" class="w-4 h-4 inline mr-1"></i>
+          <strong>Cơ chế tự động:</strong> Mỗi giờ Bot GitHub Actions tự động sinh bài viết mới với liên kết ngữ cảnh và bắn tín hiệu IndexNow lên Microsoft Bing.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Schema.org Graph & Anchor Ratio Breakdown -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Anchor Text Breakdown -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+        <h3 class="font-extrabold text-white text-sm flex items-center gap-2">
+          <i data-lucide="pie-chart" class="w-4 h-4 text-emerald-400"></i>
+          Phân Bổ Anchor Text Chuẩn Google Penguin
+        </h3>
+        <div class="space-y-3 text-xs">
+          <div>
+            <div class="flex justify-between text-slate-300 mb-1">
+              <span>Anchor Text Thương Hiệu & URL Trần (Brand / Naked URL)</span>
+              <span class="font-bold text-amber-400">50%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+              <div class="h-full bg-amber-500 rounded-full" style="width: 50%"></div>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-0.5">Ví dụ: LaoCaiView, laocaiview.vn, Vòng Quay May Mắn, QuickPsd</p>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-slate-300 mb-1">
+              <span>Anchor Text Ngữ Cảnh Dài / LSI (Long-tail Topical)</span>
+              <span class="font-bold text-cyan-400">30%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+              <div class="h-full bg-cyan-500 rounded-full" style="width: 30%"></div>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-0.5">Ví dụ: tính lương gross net chuẩn thuế mới, tạo mã qr vietqr để bàn</p>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-slate-300 mb-1">
+              <span>Anchor Text Kêu Gọi Hành Động (Action / Generic)</span>
+              <span class="font-bold text-purple-400">20%</span>
+            </div>
+            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+              <div class="h-full bg-purple-500 rounded-full" style="width: 20%"></div>
+            </div>
+            <p class="text-[11px] text-slate-400 mt-0.5">Ví dụ: xem chi tiết tại đây, tra cứu ngay, khám phá cẩm nang</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Schema.org JSON-LD Graph -->
+      <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="font-extrabold text-white text-sm flex items-center gap-2">
+            <i data-lucide="code-2" class="w-4 h-4 text-purple-400"></i>
+            Dữ Liệu Cấu Trúc Schema.org (Linked Open Data)
+          </h3>
+          <span class="text-[10px] mono text-slate-400">JSON-LD 1.1</span>
+        </div>
+        <pre class="bg-slate-950 p-3.5 rounded-xl border border-slate-800 text-[11px] text-emerald-400 mono overflow-x-auto max-h-48 leading-relaxed">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Bức tranh du lịch và tiện ích số 2026",
+  "publisher": {
+    "@type": "Organization",
+    "name": "LaoCaiView Ecosystem",
+    "sameAs": [
+      "https://laocaiview.vn",
+      "https://vongquaymayman.web.app",
+      "https://daodaoreview.com",
+      "https://angicungduoc.food",
+      "https://lichampro.com",
+      "https://tinhluonggrossnet.vn",
+      "https://quickpsd.com",
+      "https://www.taomaqr.online"
+    ]
+  }
+}</pre>
+        <div class="text-[11px] text-slate-400">
+          Thuộc tính <code class="mono text-amber-400">sameAs</code> khai báo toàn bộ 8 website liên kết cùng 1 thực thể bản quyền duy nhất.
+        </div>
+      </div>
+    </div>
+
   </main>
 
   <!-- SYNC MODAL -->
@@ -604,17 +838,23 @@
 
     // TAB SWITCHING
     function switchTab(tabId) {
-      ['topology', 'nodes', 'matrix', 'generator'].forEach(t => {
-        document.getElementById(`tab-${t}`).classList.add('hidden');
+      ['topology', 'nodes', 'matrix', 'generator', 'turbo'].forEach(t => {
+        const el = document.getElementById(`tab-${t}`);
+        if (el) el.classList.add('hidden');
         const btn = document.getElementById(`tab-btn-${t}`);
-        btn.classList.remove('bg-amber-500', 'text-slate-950', 'shadow');
-        btn.classList.add('text-slate-400');
+        if (btn) {
+          btn.classList.remove('bg-amber-500', 'text-slate-950', 'shadow');
+          btn.classList.add('text-slate-400');
+        }
       });
 
-      document.getElementById(`tab-${tabId}`).classList.remove('hidden');
+      const activeEl = document.getElementById(`tab-${tabId}`);
+      if (activeEl) activeEl.classList.remove('hidden');
       const activeBtn = document.getElementById(`tab-btn-${tabId}`);
-      activeBtn.classList.add('bg-amber-500', 'text-slate-950', 'shadow');
-      activeBtn.classList.remove('text-slate-400');
+      if (activeBtn) {
+        activeBtn.classList.add('bg-amber-500', 'text-slate-950', 'shadow');
+        activeBtn.classList.remove('text-slate-400');
+      }
 
       if (tabId === 'topology') {
         resizeCanvas();
@@ -1131,12 +1371,88 @@ ${satLinks}
       });
     }
 
+    // TURBO NEWS & INDEXNOW UI LOGIC
+    async function loadTurboNewsData() {
+      const fallbackNews = {
+        title: "Bức Tranh Quy Hoạch Nghỉ Dưỡng Sa Pa 2026: Cơ Hội Vàng Cho Bất Động Sản Ven Thung Lũng Mường Hoa",
+        summary: "Với đà hoàn thiện của các tuyến cao tốc huyết mạch và sự chuyển mình mạnh mẽ của du lịch Sa Pa, dòng vốn đầu tư bất động sản đang tập trung mạnh vào các khu vực sinh thái ven Mường Hoa và Tả Van.",
+        content_html: `<p>Thị trường bất động sản du lịch Sa Pa đang bước vào giai đoạn bứt phá mạnh mẽ với hàng loạt dự án hạ tầng giao thông kết nối liên vùng được hoàn thiện. Du khách và nhà đầu tư có thể theo dõi biến động thị trường và giỏ hàng chuẩn pháp lý trực tiếp tại <a href="https://laocaiview.vn" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Bất động sản nghỉ dưỡng Sa Pa trên LaoCaiView</a>.</p>
+<p>Bên cạnh yếu tố địa lý, việc nâng tầm dịch vụ lưu trú homestay cũng tạo nên bước ngoặt lớn. Hiện nay, các chủ cơ sở kinh doanh tại bản Tả Phìn và Cát Cát đã tích cực trang bị bảng thanh toán <a href="https://www.taomaqr.online" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Tạo Mã QR Online VietQR</a> ngay tại quầy lễ tân để phục vụ khách du lịch không mang tiền mặt một cách thuận tiện.</p>
+<p>Sau những giờ khảo sát quỹ đất, du khách không nên bỏ lỡ trải nghiệm ẩm thực bản địa độc đáo tại <a href="https://angicungduoc.food" target="_blank" rel="noopener" class="text-emerald-400 font-bold hover:underline">Ăn Gì Cũng Được Food</a> với những món cá hồi, gà đen thắng cố nức tiếng vùng Tây Bắc.</p>`,
+        primary_anchor: { text: "Bất động sản nghỉ dưỡng Sa Pa trên LaoCaiView", url: "https://laocaiview.vn" },
+        supporting_anchors: [
+          { text: "Tạo Mã QR Online VietQR", url: "https://www.taomaqr.online" },
+          { text: "Ăn Gì Cũng Được Food", url: "https://angicungduoc.food" }
+        ],
+        published_at: new Date().toISOString().replace('T', ' ').substring(0, 19)
+      };
+
+      let news = fallbackNews;
+      try {
+        const res = await fetch('data/latest_crawled_news.json');
+        if (res.ok) {
+          news = await res.json();
+        }
+      } catch (e) {
+        console.log('Sử dụng dữ liệu bài viết dự phòng live');
+      }
+
+      const titleEl = document.getElementById('news-title');
+      const sumEl = document.getElementById('news-summary');
+      const contentEl = document.getElementById('news-content');
+      const timeBadge = document.getElementById('news-time-badge');
+      const listEl = document.getElementById('news-anchors-list');
+
+      if (titleEl) titleEl.innerText = news.title || fallbackNews.title;
+      if (sumEl) sumEl.innerText = news.summary || fallbackNews.summary;
+      if (contentEl) contentEl.innerHTML = news.content_html || fallbackNews.content_html;
+      if (timeBadge) timeBadge.innerText = `Cập nhật: ${news.published_at || news.crawled_at || 'Vừa xong'}`;
+
+      if (listEl) {
+        let anchorsHtml = '';
+        if (news.primary_anchor) {
+          anchorsHtml += `<a href="${news.primary_anchor.url}" target="_blank" class="px-2.5 py-1 rounded-lg bg-amber-500/20 text-amber-300 border border-amber-500/40 text-xs font-bold flex items-center gap-1.5 hover:bg-amber-500/30 transition">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span> ${news.primary_anchor.text}
+          </a>`;
+        }
+        if (news.supporting_anchors && Array.isArray(news.supporting_anchors)) {
+          news.supporting_anchors.forEach(sa => {
+            anchorsHtml += `<a href="${sa.url}" target="_blank" class="px-2.5 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 text-xs font-bold flex items-center gap-1.5 hover:bg-cyan-500/30 transition">
+              <span class="w-2 h-2 rounded-full bg-cyan-400"></span> ${sa.text}
+            </a>`;
+          });
+        }
+        listEl.innerHTML = anchorsHtml;
+      }
+    }
+
+    function triggerIndexNowPingUI() {
+      const btn = document.getElementById('btn-trigger-indexnow');
+      btn.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> Đang Gửi Lệnh Ép Index...`;
+      lucide.createIcons();
+
+      setTimeout(() => {
+        btn.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4 text-emerald-950"></i> Đã Gửi IndexNow Thành Công!`;
+        btn.classList.remove('from-amber-500', 'to-amber-600');
+        btn.classList.add('from-emerald-400', 'to-emerald-500');
+        lucide.createIcons();
+
+        setTimeout(() => {
+          btn.innerHTML = `<i data-lucide="send" class="w-4 h-4"></i> <span>Kích Hoạt IndexNow Ping Ngay</span>`;
+          btn.classList.remove('from-emerald-400', 'to-emerald-500');
+          btn.classList.add('from-amber-500', 'to-amber-600');
+          lucide.createIcons();
+        }, 3500);
+      }, 1200);
+    }
+
     // INITIALIZATION
     window.addEventListener('DOMContentLoaded', () => {
       renderNodesGrid();
       renderMatrixTable();
       generateWidgetCode();
       initTopology();
+      loadTurboNewsData();
       lucide.createIcons();
     });
   </script>
