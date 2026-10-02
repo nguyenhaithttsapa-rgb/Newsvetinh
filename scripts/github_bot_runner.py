@@ -40,7 +40,7 @@ SATELLITES = [
     {"name": "Vercel Cloud (Mùa Vàng)", "platform": "Vercel Cloud", "url": "https://sapa-travel-experience.vercel.app/"},
     {"name": "Netlify Global (Ecolodge)", "platform": "Netlify Global", "url": "https://sapa-travel-experience.netlify.app/"},
     {"name": "Render Cloud (Fansipan & BĐS)", "platform": "Render Cloud", "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"},
-    {"name": "Deno Deploy (Săn Mây)", "platform": "Deno Deploy", "url": "https://sapa-photospots.deno.dev/"},
+    {"name": "Deno Deploy (Săn Mây)", "platform": "Deno Deploy", "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"},
     {"name": "GitLab Pages (Nhà Đất)", "platform": "GitLab Pages", "url": "https://nhadatlaocai-review.gitlab.io/"},
     {"name": "Replit Engine (Hub)", "platform": "Replit Cloud", "url": "https://newsvetinh--laocaiview.replit.app"}
 ]
@@ -74,7 +74,7 @@ NETWORK_URLS = [
     "https://sapa-travel-experience.vercel.app/",
     "https://sapa-travel-experience.netlify.app/",
     "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html",
-    "https://sapa-photospots.deno.dev/",
+    "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/",
     "https://nhadatlaocai-review.gitlab.io/"
 ]
 
