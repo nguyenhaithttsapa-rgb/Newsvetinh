@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-03 06:21:25",
+  "timestamp": "2026-10-03 12:17:13",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 424,
+      "latency": 505,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,30 +24,30 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 131,
+      "latency": 105,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 19,
+      "latency": 62,
       "success": false
     }
   ],
   "tier2_latest": {
-    "title": "Top Tọa Độ Săn Mây Đẹp Như Tranh Vẽ & Góc Check-in Sống Ảo Triệu View Sa Pa",
-    "url": "https://telegra.ph/Top-Tọa-Độ-Săn-Mây-Đẹp-Như-Tranh-Vẽ--Góc-Check-in-Sống-Ảo-Triệu-View-Sa-Pa-10-03",
+    "title": "Cẩm Nang Toàn Tập Chinh Phục Đỉnh Fansipan & Kinh Nghiệm Mua Vé Cáp Treo 2026",
+    "url": "https://telegra.ph/Cẩm-Nang-Toàn-Tập-Chinh-Phục-Đỉnh-Fansipan--Kinh-Nghiệm-Mua-Vé-Cáp-Treo-2026-10-03-2",
     "target_satellites": [
       {
-        "name": "Deno Deploy (Săn Mây)",
-        "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"
+        "name": "Render Cloud (Fansipan & BĐS)",
+        "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"
       },
       {
-        "name": "Vercel Cloud (Mùa Vàng)",
-        "url": "https://sapa-travel-experience.vercel.app/"
+        "name": "Cloudflare Edge (Tour Sa Pa)",
+        "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/"
       }
     ],
-    "published_at": "2026-10-03 06:21:23",
+    "published_at": "2026-10-03 12:17:12",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
