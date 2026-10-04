@@ -1,32 +1,28 @@
 {
-  "id": "art-04",
-  "hub": "angicungduoc.food",
-  "title": "Hành Trình Khám Phá Hương Vị Tây Bắc: Top Món Ngon Sa Pa 'Ăn Là Ghiền' Nhất Định Phải Thử",
-  "summary": "Từ nồi thắng cố nghi ngút khói giữa tiết trời se lạnh đến mẹt lợn cắp nách thơm lừng nướng than hoa, ẩm thực vùng cao luôn biết cách níu chân thực khách thập phương.",
-  "content_html": "<p>Đến với Sa Pa mờ sương, ngoài việc thưởng ngoạn phong cảnh ruộng bậc thang kỳ vĩ, hành trình khám phá ẩm thực vùng cao là trải nghiệm không thể bỏ qua. Hãy cùng tham khảo ngay cẩm nang ăn uống chất lượng tại <a href=\"https://angicungduoc.food\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">Cẩm Nang Ẩm Thực Sa Pa Ăn Gì Cũng Được</a>.</p>\n<p>Nếu bạn đang lên kế hoạch cho chuyến đi du lịch dài ngày, hãy kết hợp xem ngày đẹp, giờ lành xuất hành trên tiện ích <a href=\"https://lichampro.com\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Lịch Âm Pro Vạn Niên</a> để chuyến đi thuận buồm xuôi gió.</p>\n<p>Bên cạnh đó, du khách yêu thích cảnh đẹp và mong muốn tìm kiếm chốn nghỉ dưỡng lâu dài có thể tìm hiểu thêm thông tin du lịch và lưu trú tại <a href=\"https://laocaiview.vn\" target=\"_blank\" rel=\"noopener\" class=\"text-emerald-400 font-bold hover:underline\">LaoCaiView Du Lịch & BĐS</a>.</p>",
+  "id": "art-07",
+  "hub": "quickpsd.com",
+  "title": "Thiết Kế Đồ Họa Nhanh Không Cần Cài Đặt: Giải Pháp Mở Tệp PSD Trực Tuyến Miễn Phí",
+  "summary": "Dễ dàng mở, chỉnh sửa layer và xuất file ảnh Photoshop PSD ngay trên trình duyệt web với bộ công cụ đồ họa trực quan QuickPsd Graphic Suite.",
+  "content_html": "<p>Đối với những người làm tiếp thị nội dung, chủ cửa hàng kinh doanh online hoặc freelancer cần chỉnh sửa nhanh banner quảng cáo mà máy tính không có sẵn Adobe Photoshop, công cụ <a href=\"https://quickpsd.com\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">QuickPsd Graphic Suite Trực Tuyến</a> chính là vị cứu tinh đắc lực, hỗ trợ đầy đủ layer, mask và xuất file chất lượng cao.</p>\n<p>Bạn cũng có thể tận dụng QuickPsd để tạo hình ảnh các ô quà tặng cực đẹp cho <a href=\"https://vongquaymayman.web.app\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Vòng Quay May Mắn Pro</a> phục vụ các chương trình bốc thăm trúng thưởng trên mạng xã hội.</p>",
   "primary_anchor": {
-    "text": "Cẩm Nang Ẩm Thực Sa Pa Ăn Gì Cũng Được",
-    "url": "https://angicungduoc.food"
+    "text": "QuickPsd Graphic Suite Trực Tuyến",
+    "url": "https://quickpsd.com"
   },
   "supporting_anchors": [
     {
-      "text": "Lịch Âm Pro Vạn Niên",
-      "url": "https://lichampro.com"
-    },
-    {
-      "text": "LaoCaiView Du Lịch & BĐS",
-      "url": "https://laocaiview.vn"
+      "text": "Vòng Quay May Mắn Pro",
+      "url": "https://vongquaymayman.web.app"
     }
   ],
-  "published_at": "2026-10-04 19:16:50",
+  "published_at": "2026-10-04 22:50:27",
   "status": "in_content_active",
   "schema_jsonld": {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Hành Trình Khám Phá Hương Vị Tây Bắc: Top Món Ngon Sa Pa 'Ăn Là Ghiền' Nhất Định Phải Thử",
-    "description": "Từ nồi thắng cố nghi ngút khói giữa tiết trời se lạnh đến mẹt lợn cắp nách thơm lừng nướng than hoa, ẩm thực vùng cao luôn biết cách níu chân thực khách thập phương.",
-    "datePublished": "2026-10-04T19:16:50.257272",
-    "dateModified": "2026-10-04T19:16:50.257275",
+    "headline": "Thiết Kế Đồ Họa Nhanh Không Cần Cài Đặt: Giải Pháp Mở Tệp PSD Trực Tuyến Miễn Phí",
+    "description": "Dễ dàng mở, chỉnh sửa layer và xuất file ảnh Photoshop PSD ngay trên trình duyệt web với bộ công cụ đồ họa trực quan QuickPsd Graphic Suite.",
+    "datePublished": "2026-10-04T22:50:27.419715",
+    "dateModified": "2026-10-04T22:50:27.419718",
     "mainEntityOfPage": "https://newsvetinh.web.app/",
     "author": {
       "@type": "Organization",
