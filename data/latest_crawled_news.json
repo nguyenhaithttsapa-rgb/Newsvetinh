@@ -1,28 +1,32 @@
 {
-  "id": "art-08",
-  "hub": "www.taomaqr.online",
-  "title": "Chuyển Đổi Số Thanh Toán Không Tiền Mặt: Tạo Mã VietQR Chuẩn NAPAS247 Để Bàn Siêu Đẹp",
-  "summary": "Giải pháp tạo mã QR động và tĩnh có gắn logo thương hiệu, định dạng số tiền thanh toán chính xác, giúp cửa hàng và quán cafe hạn chế thất thoát doanh thu.",
-  "content_html": "<p>Hình thức quét mã chuyển khoản ngân hàng đang dần thay thế hoàn toàn tiền mặt tại các điểm bán lẻ, quán ăn và homestay trên toàn quốc. Nhằm giúp các chủ cơ sở tạo ra những bảng mã chuyên nghiệp có sẵn thông tin tài khoản và logo, dịch vụ <a href=\"https://www.taomaqr.online\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">Tạo Mã QR Online VietQR Để Bàn Miễn Phí</a> đã ra đời và được đông đảo hộ kinh doanh tin dùng.</p>\n<p>Tại các điểm đến du lịch như Sa Pa, các chủ cơ sở kết hợp giới thiệu sản phẩm dịch vụ trên <a href=\"https://laocaiview.vn\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Cổng thông tin LaoCaiView</a> và nhận đặt cọc phòng nhanh chóng qua mã VietQR để bàn rất hiệu quả.</p>",
+  "id": "art-04",
+  "hub": "angicungduoc.food",
+  "title": "Hành Trình Khám Phá Hương Vị Tây Bắc: Top Món Ngon Sa Pa 'Ăn Là Ghiền' Nhất Định Phải Thử",
+  "summary": "Từ nồi thắng cố nghi ngút khói giữa tiết trời se lạnh đến mẹt lợn cắp nách thơm lừng nướng than hoa, ẩm thực vùng cao luôn biết cách níu chân thực khách thập phương.",
+  "content_html": "<p>Đến với Sa Pa mờ sương, ngoài việc thưởng ngoạn phong cảnh ruộng bậc thang kỳ vĩ, hành trình khám phá ẩm thực vùng cao là trải nghiệm không thể bỏ qua. Hãy cùng tham khảo ngay cẩm nang ăn uống chất lượng tại <a href=\"https://angicungduoc.food\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">Cẩm Nang Ẩm Thực Sa Pa Ăn Gì Cũng Được</a>.</p>\n<p>Nếu bạn đang lên kế hoạch cho chuyến đi du lịch dài ngày, hãy kết hợp xem ngày đẹp, giờ lành xuất hành trên tiện ích <a href=\"https://lichampro.com\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Lịch Âm Pro Vạn Niên</a> để chuyến đi thuận buồm xuôi gió.</p>\n<p>Bên cạnh đó, du khách yêu thích cảnh đẹp và mong muốn tìm kiếm chốn nghỉ dưỡng lâu dài có thể tìm hiểu thêm thông tin du lịch và lưu trú tại <a href=\"https://laocaiview.vn\" target=\"_blank\" rel=\"noopener\" class=\"text-emerald-400 font-bold hover:underline\">LaoCaiView Du Lịch & BĐS</a>.</p>",
   "primary_anchor": {
-    "text": "Tạo Mã QR Online VietQR Để Bàn Miễn Phí",
-    "url": "https://www.taomaqr.online"
+    "text": "Cẩm Nang Ẩm Thực Sa Pa Ăn Gì Cũng Được",
+    "url": "https://angicungduoc.food"
   },
   "supporting_anchors": [
     {
-      "text": "Cổng thông tin LaoCaiView",
+      "text": "Lịch Âm Pro Vạn Niên",
+      "url": "https://lichampro.com"
+    },
+    {
+      "text": "LaoCaiView Du Lịch & BĐS",
       "url": "https://laocaiview.vn"
     }
   ],
-  "published_at": "2026-10-04 15:45:09",
+  "published_at": "2026-10-04 19:16:50",
   "status": "in_content_active",
   "schema_jsonld": {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Chuyển Đổi Số Thanh Toán Không Tiền Mặt: Tạo Mã VietQR Chuẩn NAPAS247 Để Bàn Siêu Đẹp",
-    "description": "Giải pháp tạo mã QR động và tĩnh có gắn logo thương hiệu, định dạng số tiền thanh toán chính xác, giúp cửa hàng và quán cafe hạn chế thất thoát doanh thu.",
-    "datePublished": "2026-10-04T15:45:09.465792",
-    "dateModified": "2026-10-04T15:45:09.465798",
+    "headline": "Hành Trình Khám Phá Hương Vị Tây Bắc: Top Món Ngon Sa Pa 'Ăn Là Ghiền' Nhất Định Phải Thử",
+    "description": "Từ nồi thắng cố nghi ngút khói giữa tiết trời se lạnh đến mẹt lợn cắp nách thơm lừng nướng than hoa, ẩm thực vùng cao luôn biết cách níu chân thực khách thập phương.",
+    "datePublished": "2026-10-04T19:16:50.257272",
+    "dateModified": "2026-10-04T19:16:50.257275",
     "mainEntityOfPage": "https://newsvetinh.web.app/",
     "author": {
       "@type": "Organization",
