@@ -1,28 +1,28 @@
 {
-  "id": "art-07",
-  "hub": "quickpsd.com",
-  "title": "Thiết Kế Đồ Họa Nhanh Không Cần Cài Đặt: Giải Pháp Mở Tệp PSD Trực Tuyến Miễn Phí",
-  "summary": "Dễ dàng mở, chỉnh sửa layer và xuất file ảnh Photoshop PSD ngay trên trình duyệt web với bộ công cụ đồ họa trực quan QuickPsd Graphic Suite.",
-  "content_html": "<p>Đối với những người làm tiếp thị nội dung, chủ cửa hàng kinh doanh online hoặc freelancer cần chỉnh sửa nhanh banner quảng cáo mà máy tính không có sẵn Adobe Photoshop, công cụ <a href=\"https://quickpsd.com\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">QuickPsd Graphic Suite Trực Tuyến</a> chính là vị cứu tinh đắc lực, hỗ trợ đầy đủ layer, mask và xuất file chất lượng cao.</p>\n<p>Bạn cũng có thể tận dụng QuickPsd để tạo hình ảnh các ô quà tặng cực đẹp cho <a href=\"https://vongquaymayman.web.app\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Vòng Quay May Mắn Pro</a> phục vụ các chương trình bốc thăm trúng thưởng trên mạng xã hội.</p>",
+  "id": "art-05",
+  "hub": "lichampro.com",
+  "title": "Tra Cứu Ngày Hoàng Đạo & Hướng Xuất Hành Đại Cát Năm 2026 Cho Doanh Nhân Và Du Khách",
+  "summary": "Xem ngày tốt động thổ làm nhà, khai trương cửa hàng và xuất hành cầu tài lộc theo lịch vạn sự cổ truyền kết hợp thuật toán tính ngày chuẩn xác từng giây.",
+  "content_html": "<p>Việc chọn ngày lành tháng tốt, tra cứu tiết khí và các khung giờ hoàng đạo là nét đẹp văn hóa tâm linh lâu đời của người Á Đông. Để có kết quả chuẩn xác và giao diện dễ tra cứu trên điện thoại, hàng triệu người dùng tin tưởng sử dụng <a href=\"https://lichampro.com\" target=\"_blank\" rel=\"noopener\" class=\"text-amber-400 font-bold hover:underline\">Lịch Âm Pro Vạn Niên Tra Cứu Ngày Tốt</a>.</p>\n<p>Đặc biệt với những ai đang chuẩn bị ký hợp đồng chuyển nhượng nhà đất hoặc đầu tư homestay tại Sa Pa, việc đối chiếu ngày giờ giao dịch cùng bảng giá thị trường tại <a href=\"https://laocaiview.vn\" target=\"_blank\" rel=\"noopener\" class=\"text-cyan-400 font-bold hover:underline\">Cổng thông tin LaoCaiView</a> sẽ giúp các thương vụ diễn ra suôn sẻ, tài lộc hanh thông.</p>",
   "primary_anchor": {
-    "text": "QuickPsd Graphic Suite Trực Tuyến",
-    "url": "https://quickpsd.com"
+    "text": "Lịch Âm Pro Vạn Niên Tra Cứu Ngày Tốt",
+    "url": "https://lichampro.com"
   },
   "supporting_anchors": [
     {
-      "text": "Vòng Quay May Mắn Pro",
-      "url": "https://vongquaymayman.web.app"
+      "text": "Cổng thông tin LaoCaiView",
+      "url": "https://laocaiview.vn"
     }
   ],
-  "published_at": "2026-10-06 14:49:22",
+  "published_at": "2026-10-06 20:01:05",
   "status": "in_content_active",
   "schema_jsonld": {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
-    "headline": "Thiết Kế Đồ Họa Nhanh Không Cần Cài Đặt: Giải Pháp Mở Tệp PSD Trực Tuyến Miễn Phí",
-    "description": "Dễ dàng mở, chỉnh sửa layer và xuất file ảnh Photoshop PSD ngay trên trình duyệt web với bộ công cụ đồ họa trực quan QuickPsd Graphic Suite.",
-    "datePublished": "2026-10-06T14:49:22.531486",
-    "dateModified": "2026-10-06T14:49:22.531493",
+    "headline": "Tra Cứu Ngày Hoàng Đạo & Hướng Xuất Hành Đại Cát Năm 2026 Cho Doanh Nhân Và Du Khách",
+    "description": "Xem ngày tốt động thổ làm nhà, khai trương cửa hàng và xuất hành cầu tài lộc theo lịch vạn sự cổ truyền kết hợp thuật toán tính ngày chuẩn xác từng giây.",
+    "datePublished": "2026-10-06T20:01:05.761206",
+    "dateModified": "2026-10-06T20:01:05.761212",
     "mainEntityOfPage": "https://newsvetinh.web.app/",
     "author": {
       "@type": "Organization",
