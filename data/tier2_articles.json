@@ -1,5 +1,21 @@
 [
   {
+    "title": "Top Tọa Độ Săn Mây Đẹp Như Tranh Vẽ & Góc Check-in Sống Ảo Triệu View Sa Pa",
+    "url": "https://telegra.ph/Top-Tọa-Độ-Săn-Mây-Đẹp-Như-Tranh-Vẽ--Góc-Check-in-Sống-Ảo-Triệu-View-Sa-Pa-10-07",
+    "target_satellites": [
+      {
+        "name": "Deno Deploy (Săn Mây)",
+        "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"
+      },
+      {
+        "name": "Vercel Cloud (Mùa Vàng)",
+        "url": "https://sapa-travel-experience.vercel.app/"
+      }
+    ],
+    "published_at": "2026-10-07 06:55:19",
+    "platform": "Telegra.ph (Telegram API - DA 91)"
+  },
+  {
     "title": "Cẩm Nang Toàn Tập Chinh Phục Đỉnh Fansipan & Kinh Nghiệm Mua Vé Cáp Treo 2026",
     "url": "https://telegra.ph/Cẩm-Nang-Toàn-Tập-Chinh-Phục-Đỉnh-Fansipan--Kinh-Nghiệm-Mua-Vé-Cáp-Treo-2026-10-07",
     "target_satellites": [
@@ -301,22 +317,6 @@
       }
     ],
     "published_at": "2026-10-03 00:58:40",
-    "platform": "Telegra.ph (Telegram API - DA 91)"
-  },
-  {
-    "title": "Bức Tranh Bất Động Sản Sa Pa 2026: Đòn Bẩy Hạ Tầng & Dòng Tiền Du Lịch Bứt Phá",
-    "url": "https://telegra.ph/Bức-Tranh-Bất-Động-Sản-Sa-Pa-2026-Đòn-Bẩy-Hạ-Tầng--Dòng-Tiền-Du-Lịch-Bứt-Phá-10-02-3",
-    "target_satellites": [
-      {
-        "name": "GitHub Pages (BĐS Sa Pa)",
-        "url": "https://nguyenhaithttsapa-rgb.github.io/batdongsan-sapa-review/"
-      },
-      {
-        "name": "GitHub Pages 2 (Nhà Đất Lào Cai)",
-        "url": "https://nguyenhaithttsapa-rgb.github.io/nhadatlaocai-review/"
-      }
-    ],
-    "published_at": "2026-10-02 21:11:57",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 ]
