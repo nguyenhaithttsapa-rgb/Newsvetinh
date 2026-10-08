@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-08 20:43:02",
+  "timestamp": "2026-10-08 13:45:10",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 1000,
+      "latency": 378,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 829,
+      "latency": 414,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,30 +24,30 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 1531,
+      "latency": 90,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 89,
+      "latency": 44,
       "success": false
     }
   ],
   "tier2_latest": {
-    "title": "Cẩm Nang Toàn Tập Chinh Phục Đỉnh Fansipan & Kinh Nghiệm Mua Vé Cáp Treo 2026",
-    "url": "https://telegra.ph/Cẩm-Nang-Toàn-Tập-Chinh-Phục-Đỉnh-Fansipan--Kinh-Nghiệm-Mua-Vé-Cáp-Treo-2026-10-08-2",
+    "title": "Tối Ưu Chi Phí Nhân Sự & Biểu Thuế Thu Nhập Cá Nhân 2026 Cho Doanh Nghiệp Trẻ",
+    "url": "https://telegra.ph/Tối-Ưu-Chi-Phí-Nhân-Sự--Biểu-Thuế-Thu-Nhập-Cá-Nhân-2026-Cho-Doanh-Nghiệp-Trẻ-10-08",
     "target_satellites": [
       {
-        "name": "Render Cloud (Fansipan & BĐS)",
-        "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"
+        "name": "Vercel Cloud (Mùa Vàng)",
+        "url": "https://sapa-travel-experience.vercel.app/"
       },
       {
-        "name": "Cloudflare Edge (Tour Sa Pa)",
-        "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/"
+        "name": "Netlify Global (Ecolodge)",
+        "url": "https://sapa-travel-experience.netlify.app/"
       }
     ],
-    "published_at": "2026-10-08 20:42:58",
+    "published_at": "2026-10-08 13:45:09",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
