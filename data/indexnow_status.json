@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-07 20:26:25",
+  "timestamp": "2026-10-08 00:45:29",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 494,
+      "latency": 746,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 519,
+      "latency": 508,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,19 +24,19 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 209,
+      "latency": 218,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 42,
+      "latency": 34,
       "success": false
     }
   ],
   "tier2_latest": {
     "title": "Cẩm Nang Toàn Tập Chinh Phục Đỉnh Fansipan & Kinh Nghiệm Mua Vé Cáp Treo 2026",
-    "url": "https://telegra.ph/Cẩm-Nang-Toàn-Tập-Chinh-Phục-Đỉnh-Fansipan--Kinh-Nghiệm-Mua-Vé-Cáp-Treo-2026-10-07-2",
+    "url": "https://telegra.ph/Cẩm-Nang-Toàn-Tập-Chinh-Phục-Đỉnh-Fansipan--Kinh-Nghiệm-Mua-Vé-Cáp-Treo-2026-10-08",
     "target_satellites": [
       {
         "name": "Render Cloud (Fansipan & BĐS)",
@@ -47,7 +47,7 @@
         "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/"
       }
     ],
-    "published_at": "2026-10-07 20:26:23",
+    "published_at": "2026-10-08 00:45:27",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
