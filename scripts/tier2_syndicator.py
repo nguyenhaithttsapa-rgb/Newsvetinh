@@ -160,6 +160,29 @@ def get_tier2_templates():
                     "."
                 ]}
             ]
+        },
+        {
+            "id": "t2-art-05",
+            "title": "Sức Hút Hoạt Hình 3D Tiên Hiệp: Đột Phá Đồ Họa Unreal Engine & Cốt Truyện Kinh Điển",
+            "target_satellites": [
+                {"name": "Đao Đao Review Anime 3D", "url": "https://daodaoreview.com"},
+                {"name": "Replit Engine (Hub)", "url": "https://newsvetinh--laocaiview.replit.app"}
+            ],
+            "content_nodes": [
+                {"tag": "p", "children": ["Thị trường phim hoạt hình 3D Trung Quốc đang bùng nổ mạnh mẽ với các tác phẩm đình đám như Đấu Phá Thương Khung, Phàm Nhân Tu Tiên, Thế Giới Hoàn Mỹ. Kỹ xảo võ thuật mãn nhãn và cốt truyện tu chân sâu sắc thu hút hàng chục triệu lượt xem mỗi tập."]},
+                {"tag": "h3", "children": ["1. Phân tích cốt truyện và bảng xếp hạng cảnh giới"]},
+                {"tag": "p", "children": ["Người hâm mộ có thể cập nhật các bài phân tích nhân vật, tóm tắt tình tiết tập mới nhất và giải mã cảnh giới tu luyện tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://daodaoreview.com"}, "children": ["👉 Đao Đao Review Anime 3D - Chuyên Trang Đánh Giá Phim Hoạt Hình Tiên Hiệp"]},
+                    "."
+                ]},
+                {"tag": "h3", "children": ["2. Kết nối cộng đồng và mạng lưới đa nền tảng"]},
+                {"tag": "p", "children": ["Hệ thống mạng lưới truyền thông số và phân phối nội dung đa đám mây giúp bạn đọc tiếp cận nhanh chóng những bài review chất lượng nhất. Khám phá thêm tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://newsvetinh.web.app"}, "children": ["👉 Cổng Thông Tin Điều Phối Đa Đám Mây Master Hub"]},
+                    "."
+                ]}
+            ]
         }
     ]
 
