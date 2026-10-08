@@ -136,8 +136,8 @@ TOPICAL_CLUSTERS = [
             "phân tích cốt truyện Đấu Phá",
             "bảng xếp hạng cảnh giới tu tiên"
         ],
-        "bridge_url": "https://daodaoreview.com",
-        "bridge_anchor": "Cộng Đồng Hoạt Hình Trung Quốc 3D Đao Đao",
+        "bridge_url": "https://newsvetinh--laocaiview.replit.app",
+        "bridge_anchor": "Cổng Thông Tin Đánh Giá Phim Hoạt Hình & Truyền Thông Số Replit",
         "featured_images": [
             "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=1200",
             "https://images.unsplash.com/photo-1534447677768-be436bb09401?w=1200"
@@ -220,8 +220,8 @@ TOPICAL_CLUSTERS = [
             "xem ngày hoàng đạo động thổ",
             "giờ lành xuất hành 2026"
         ],
-        "bridge_url": "https://laocaiview.vn",
-        "bridge_anchor": "Cổng Thông Tin LaoCaiView Đón Đầu Ngày Đẹp Khai Trương",
+        "bridge_url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html",
+        "bridge_anchor": "Cẩm Nang Văn Hóa & Phong Tục Đón Ngày Lành Render Cloud",
         "featured_images": [
             "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200",
             "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200"

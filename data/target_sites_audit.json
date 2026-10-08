@@ -1,0 +1,217 @@
+[
+  {
+    "name": "LaoCaiView Ecosystem",
+    "url": "https://laocaiview.vn",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 4633,
+    "title": "LaoCaiView - Bất động sản, lưu trú, việc làm tại Lào Cai Sa Pa",
+    "title_len": 62,
+    "description": "Hệ sinh thái dịch vụ du lịch chuyên nghiệp",
+    "desc_len": 42,
+    "canonical": "https://sapaview.vn/",
+    "robots": "index, follow",
+    "analytics_tags": [
+      "G-CD5FQPC501"
+    ],
+    "gsc_verification": "",
+    "h1_tags": [
+      "Nền tảng du lịch và thương mại hàng đầu  Sa Pa - Lào Cai"
+    ],
+    "h2_count": 9,
+    "has_schema": true,
+    "has_og": true,
+    "error": ""
+  },
+  {
+    "name": "Vòng Quay May Mắn Pro",
+    "url": "https://vongquaymayman.web.app",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 151,
+    "title": "Vòng Quay May Mắn Pro - Lucky Wheel & Livestream Mini-Games Studio",
+    "title_len": 66,
+    "description": "Bộ công cụ quay thưởng, vòng quay may mắn random, game đua vịt 20 làn, mở hộp quà bí mật, quay số may mắn, tung đồng xu và lắc xúc xắc 3D. 100% miễn phí, không quảng cáo, thuật toán Crypto CSPRNG công bằng tuyệt đối.",
+    "desc_len": 216,
+    "canonical": "https://vongquaymayman.web.app/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "analytics_tags": [
+      "G-LVDG209CXF"
+    ],
+    "gsc_verification": "4TZBCwgz83niQjaSjh_j-AJwnWvmNVzI6AsxU7D6Kf0",
+    "h1_tags": [
+      "Vòng Quay May Mắn Pro - Bộ Mini Game Livestream & Bốc Thăm Trúng Thưởng Miễn Phí"
+    ],
+    "h2_count": 9,
+    "has_schema": true,
+    "has_og": true,
+    "error": ""
+  },
+  {
+    "name": "Đao Đao Review Anime",
+    "url": "https://daodaoreview.com",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 833,
+    "title": "Dao Dao Review - Thế Giới Review Phim Hoạt Hình 3D &amp; Truyện Tranh Đỉnh Cao",
+    "title_len": 78,
+    "description": "Trang tổng hợp video review, tóm tắt hoạt hình 3D tu tiên, huyền huyễn, anime và truyện tranh chất lượng cao hoàn toàn không quảng cáo khó chịu.",
+    "desc_len": 144,
+    "canonical": "",
+    "robots": "",
+    "analytics_tags": [
+      "G-HYVH98WXZN"
+    ],
+    "gsc_verification": "",
+    "h1_tags": [],
+    "h2_count": 2,
+    "has_schema": false,
+    "has_og": true,
+    "error": ""
+  },
+  {
+    "name": "Ăn Gì Cũng Được Food",
+    "url": "https://angicungduoc.food",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 1593,
+    "title": "Ăn Gì Cũng Được • angicungduoc.food - Cứu Tinh Giờ Trưa",
+    "title_len": 55,
+    "description": "Hôm nay ăn gì? Bộ lọc ẩm thực Việt Nam thông minh theo thời tiết, tâm trạng và ngân sách. Kèm vòng quay ai trả tiền và giải mã người yêu ăn gì cũng được!",
+    "desc_len": 153,
+    "canonical": "https://angicungduoc.food/",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "analytics_tags": [
+      "G-683GL20XHJ"
+    ],
+    "gsc_verification": "",
+    "h1_tags": [
+      "angicungduoc.food"
+    ],
+    "h2_count": 4,
+    "has_schema": true,
+    "has_og": true,
+    "error": ""
+  },
+  {
+    "name": "Lịch Âm Pro Vạn Niên",
+    "url": "https://lichampro.com",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 6164,
+    "title": "Lịch Âm Hôm Nay - Lịch Vạn Niên & Xem Ngày Tốt Xấu",
+    "title_len": 50,
+    "description": "Tra cứu lịch âm hôm nay, đổi ngày âm dương, xem ngày hoàng đạo, giờ tốt xấu, tiết khí và văn khấn chuẩn xác nhất.",
+    "desc_len": 113,
+    "canonical": "https://lichampro.com/",
+    "robots": "",
+    "analytics_tags": [
+      "G-FQXHTRHHLV"
+    ],
+    "gsc_verification": "9gsw4e7jCkJBFrfeZ-8ILP9QaPfbbtGmIjEaMgx4NVQ",
+    "h1_tags": [
+      "LỊCH VẠN NIÊN Chuẩn GMT+7",
+      "Văn Khấn Tất Niên Chiều 30 (Hoặc 29) Tết: Hướng Dẫn Nghi Thức Cúng Thần Linh & Gia Tiên Chuẩn Nhất",
+      "Văn Khấn Giao Thừa Trong Nhà: Bài Cúng Thần Linh, Gia Tiên Đón Năm Mới Lúc 0h",
+      "Văn Khấn Giao Thừa Ngoài Trời: Bài Cúng Thiên Binh, Hành Khiển Bàn Thờ Lộ Thiên",
+      "Văn Khấn Cúng Ông Công Ông Táo (23 Tháng Chạp): Nghi Thức Tiễn Táo Quân Về Chầu Trời",
+      "Văn Khấn Rằm Tháng Giêng (Tết Nguyên Tiêu): Cúng Phật, Thần Linh & Gia Tiên Chuẩn Nhất",
+      "Văn Khấn Rằm Tháng 7 (Tết Trung Nguyên / Vu Lan): Cúng Thần Linh, Gia Tiên & Chúng Sinh Chuẩn Nhất",
+      "Văn Khấn Rằm Tháng 8 (Tết Trung Thu): Cúng Trăng, Tạ Ơn Thần Linh & Gia Tiên Chuẩn Nhất",
+      "Văn Khấn Mùng 1 Hàng Tháng (Ngày Sóc): Bài Cúng Thần Linh & Gia Tiên Cầu May Mắn, Bình An, Tài Lộc",
+      "Văn Khấn Ngày Rằm 15 Hàng Tháng: Bài Cúng Thần Linh & Gia Tiên Cầu Bình An, Phúc Lộc Viên Mãn",
+      "Văn Khấn Thần Tài - Thổ Địa Hàng Ngày & Mùng 1: Cầu Tài Lộc Dồi Dào, Buôn May Bán Đắt",
+      "Văn Khấn Cúng Xe Ô Tô / Xe Máy: Cầu Thượng Lộ Bình An, Hút Khách Hàng, Đắc Tài Sai Lộc",
+      "Văn Khấn Nhập Trạch (Về Nhà Mới): Nghi Lễ Trình Báo Thần Linh & Cáo Yết Gia Tiên Chuẩn Nhất",
+      "Văn Khấn Đầy Tháng / Thôi Nôi: Cúng Tạ Ơn 12 Bà Mụ & 3 Đức Thầy Che Chở Cho Bé",
+      "Văn Khấn Lễ Cưới Hỏi (Ăn Hỏi & Đón Dâu): Trình Báo Gia Tiên Hai Họ",
+      "Văn Khấn Lễ Mừng Thượng Thọ: Tạ Ơn Trời Đất & Tổ Tiên Ban Thọ Phúc Khang Ninh",
+      "Văn Khấn Tiết Thanh Minh / Tảo Mộ: Bài Cúng Thần Linh Nghĩa Trang & Gia Tiên Tại Mộ Phần",
+      "Văn Khấn Lễ Phật Tại Chùa: Cầu Bình An, Sức Khỏe, Gia Đạo Hòa Thuận & Giải Trừ Nghiệp Chướng",
+      "Văn Khấn Đức Ông & Ban Tam Bảo Trong Chùa: Trình Tự Bái Yết Chốn Thiền Môn Chuẩn Phong Tục",
+      "Văn Khấn Tại Đền, Phủ (Thánh & Mẫu): Cầu Tài Lộc, Công Danh, Buôn Bán Đắt Hàng & Trừ Tà Bình An",
+      "Văn Khấn Động Thổ: Xin Phép Thổ Thần, Long Mạch Trước Khi Đào Móng Xây Nhà, Sửa Chữa",
+      "Văn Khấn Cất Nóc (Lễ Thượng Lương): Đặt Thanh Xà Gồ Mái Nhà, Đổ Mái Bê Tông Vững Chãi",
+      "Văn Khấn Khai Trương Cửa Hàng / Công Ty: Cầu Thần Tài, Thổ Địa Phù Hộ Buôn May Bán Đắt, Kinh Doanh Hồng Phát",
+      "Văn Khấn Cúng Sao Giải Hạn: Hóa Giải Vận Hạn Cửu Diệu (Kế Đô, La Hầu, Thái Bạch) Đầu Năm & Hàng Tháng",
+      "Văn Khấn Cúng Chúng Sinh / Cô Hồn Hàng Tháng (Mùng 2 & 16 Âm Lịch): Thí Thực Bố Thí Vong Linh Không Nơi Nương Tựa"
+    ],
+    "h2_count": 75,
+    "has_schema": true,
+    "has_og": true,
+    "error": ""
+  },
+  {
+    "name": "Tính Lương Gross Net 2026",
+    "url": "https://tinhluonggrossnet.vn",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 521,
+    "title": "Tính Lương Gross Net 2026 – Công Cụ Tính Lương & Thuế TNCN Chuẩn Xác | TinhLuongGrossNet.vn",
+    "title_len": 91,
+    "description": "Tính lương Gross sang Net và Net sang Gross chính xác 2026. Cập nhật Luật Thuế TNCN mới: giảm trừ bản thân 15.5 triệu, người phụ thuộc 6.2 triệu. Kết quả tức thì, miễn phí, không quảng cáo.",
+    "desc_len": 189,
+    "canonical": "https://tinhluonggrossnet.vn/",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "analytics_tags": [
+      "G-7MPX3HYB0N"
+    ],
+    "gsc_verification": "uWf-6i_qbMtEYYkKzrY9wfqEcmY7xWo_pRQo9iW3wBk",
+    "h1_tags": [
+      "Tính Lương Gross ↔ Net & Thuế TNCN"
+    ],
+    "h2_count": 2,
+    "has_schema": true,
+    "has_og": true,
+    "error": ""
+  },
+  {
+    "name": "QuickPsd Graphic Suite",
+    "url": "https://quickpsd.com",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 1947,
+    "title": "QuickPsd - Free Online PSD Editor & Graphic Design Suite",
+    "title_len": 56,
+    "description": "Open, edit, and convert PSD, AI, XD, Sketch, and RAW photos online for free without Photoshop. Fast, 100% in-browser, and completely secure.",
+    "desc_len": 140,
+    "canonical": "",
+    "robots": "",
+    "analytics_tags": [
+      "G-7DK805PNX7"
+    ],
+    "gsc_verification": "",
+    "h1_tags": [
+      "QuickPsd: Free Online PSD Editor &amp; Graphic Design Suite"
+    ],
+    "h2_count": 3,
+    "has_schema": true,
+    "has_og": false,
+    "error": ""
+  },
+  {
+    "name": "Tạo Mã QR Online VietQR",
+    "url": "https://www.taomaqr.online",
+    "status": "ONLINE",
+    "code": 200,
+    "latency_ms": 1419,
+    "title": "TaoMaQR.Online • Tạo Bảng Mã VietQR & Wi-Fi Quán Đẹp Để Bàn",
+    "title_len": 59,
+    "description": "TaoMaQR.Online - Công cụ tạo bảng mã VietQR & mã Wi-Fi cho quán tùy biến đẹp mắt: Chèn logo shop, chọn khung viền Mèo Thần Tài, Tiệm Nail, Cà phê Vintage, Shipper, bảng đôi 2-in-1, xuất ảnh PNG 300 DPI và Vector SVG để in ấn dán quầy. Miễn phí 100%.",
+    "desc_len": 249,
+    "canonical": "",
+    "robots": "",
+    "analytics_tags": [
+      "G-0JBWZG36R1",
+      "G-1"
+    ],
+    "gsc_verification": "",
+    "h1_tags": [
+      "TaoMaQR.Online"
+    ],
+    "h2_count": 6,
+    "has_schema": false,
+    "has_og": true,
+    "error": ""
+  }
+]

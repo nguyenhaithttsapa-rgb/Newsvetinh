@@ -165,21 +165,90 @@ def get_tier2_templates():
             "id": "t2-art-05",
             "title": "Sức Hút Hoạt Hình 3D Tiên Hiệp: Đột Phá Đồ Họa Unreal Engine & Cốt Truyện Kinh Điển",
             "target_satellites": [
-                {"name": "Đao Đao Review Anime 3D", "url": "https://daodaoreview.com"},
-                {"name": "Replit Engine (Hub)", "url": "https://newsvetinh--laocaiview.replit.app"}
+                {"name": "Replit Engine (Hub)", "url": "https://newsvetinh--laocaiview.replit.app"},
+                {"name": "Deno Deploy (Săn Mây)", "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"}
             ],
             "content_nodes": [
                 {"tag": "p", "children": ["Thị trường phim hoạt hình 3D Trung Quốc đang bùng nổ mạnh mẽ với các tác phẩm đình đám như Đấu Phá Thương Khung, Phàm Nhân Tu Tiên, Thế Giới Hoàn Mỹ. Kỹ xảo võ thuật mãn nhãn và cốt truyện tu chân sâu sắc thu hút hàng chục triệu lượt xem mỗi tập."]},
                 {"tag": "h3", "children": ["1. Phân tích cốt truyện và bảng xếp hạng cảnh giới"]},
-                {"tag": "p", "children": ["Người hâm mộ có thể cập nhật các bài phân tích nhân vật, tóm tắt tình tiết tập mới nhất và giải mã cảnh giới tu luyện tại "]},
+                {"tag": "p", "children": ["Người hâm mộ có thể cập nhật các bài phân tích nhân vật, tóm tắt tình tiết tập mới nhất và giải mã cảnh giới tu luyện tại mạng lưới nội dung số "]},
                 {"tag": "p", "children": [
-                    {"tag": "a", "attrs": {"href": "https://daodaoreview.com"}, "children": ["👉 Đao Đao Review Anime 3D - Chuyên Trang Đánh Giá Phim Hoạt Hình Tiên Hiệp"]},
+                    {"tag": "a", "attrs": {"href": "https://newsvetinh--laocaiview.replit.app"}, "children": ["👉 Cổng Thông Tin Đánh Giá Phim Hoạt Hình & Truyền Thông Số Replit"]},
                     "."
                 ]},
                 {"tag": "h3", "children": ["2. Kết nối cộng đồng và mạng lưới đa nền tảng"]},
-                {"tag": "p", "children": ["Hệ thống mạng lưới truyền thông số và phân phối nội dung đa đám mây giúp bạn đọc tiếp cận nhanh chóng những bài review chất lượng nhất. Khám phá thêm tại "]},
+                {"tag": "p", "children": ["Hệ thống mạng lưới truyền thông số và phân phối nội dung đa đám mây giúp bạn đọc tiếp cận nhanh chóng những góc nhìn điện ảnh đặc sắc. Khám phá thêm tại "]},
                 {"tag": "p", "children": [
-                    {"tag": "a", "attrs": {"href": "https://newsvetinh.web.app"}, "children": ["👉 Cổng Thông Tin Điều Phối Đa Đám Mây Master Hub"]},
+                    {"tag": "a", "attrs": {"href": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"}, "children": ["👉 Không Gian Giải Trí & Góc Trải Nghiệm Đa Chiều Deno"]},
+                    "."
+                ]}
+            ]
+        },
+        {
+            "id": "t2-art-06",
+            "title": "Tối Ưu Chi Phí Nhân Sự & Biểu Thuế Thu Nhập Cá Nhân 2026 Cho Doanh Nghiệp Trẻ",
+            "target_satellites": [
+                {"name": "Vercel Cloud (Mùa Vàng)", "url": "https://sapa-travel-experience.vercel.app/"},
+                {"name": "Netlify Global (Ecolodge)", "url": "https://sapa-travel-experience.netlify.app/"}
+            ],
+            "content_nodes": [
+                {"tag": "p", "children": ["Năm 2026 đánh dấu nhiều thay đổi trong chính sách thuế TNCN và các mức đóng bảo hiểm bắt buộc. Hiểu rõ phương pháp tính toán và quản trị quỹ lương giúp doanh nghiệp tối ưu chi phí và tăng sự gắn kết của nhân sự."]},
+                {"tag": "h3", "children": ["1. Phân bổ ngân sách lương Gross và Net minh bạch"]},
+                {"tag": "p", "children": ["Việc số hóa quy trình tính lương và tra cứu thuế theo thời gian thực giúp giảm thiểu sai sót, nâng cao năng suất phòng kế toán. Xem thêm giải pháp tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://sapa-travel-experience.vercel.app/"}, "children": ["👉 Báo Cáo Chuyên Sâu Về Quản Trị Nhân Sự & Số Hóa Vercel Cloud"]},
+                    "."
+                ]},
+                {"tag": "h3", "children": ["2. Tích hợp thanh toán số tự động"]},
+                {"tag": "p", "children": ["Doanh nghiệp hiện đại đang đẩy mạnh thanh toán không tiền mặt và đối soát tự động hàng tháng. Tìm hiểu thêm mô hình vận hành tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://sapa-travel-experience.netlify.app/"}, "children": ["👉 Nền Tảng Tự Động Hóa Vận Hành Doanh Nghiệp Netlify Global"]},
+                    "."
+                ]}
+            ]
+        },
+        {
+            "id": "t2-art-07",
+            "title": "Xu Hướng Thiết Kế Đồ Họa Đám Mây: Chỉnh Sửa Trực Tiếp Trên Trình Duyệt Không Cần Cài Đặt",
+            "target_satellites": [
+                {"name": "Cloudflare Edge (Tour Sa Pa)", "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html"},
+                {"name": "Render Cloud (Fansipan & BĐS)", "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"}
+            ],
+            "content_nodes": [
+                {"tag": "p", "children": ["Sự phát triển của WebAssembly và Canvas API giúp các công cụ đồ họa trực tuyến đạt tốc độ xử lý layer và render vector ngang ngửa phần mềm desktop chuyên dụng."]},
+                {"tag": "h3", "children": ["1. Đơn giản hóa quy trình xuất bản ấn phẩm truyền thông"]},
+                {"tag": "p", "children": ["Người dùng có thể mở nhanh các tệp PSD, AI, thiết kế banner và xuất file ảnh dung lượng tối ưu ngay trong tích tắc. Đọc thêm đánh giá công nghệ tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html"}, "children": ["👉 Đánh Giá Công Nghệ Đồ Họa Điện Toán Đám Mây Cloudflare Edge"]},
+                    "."
+                ]},
+                {"tag": "h3", "children": ["2. Ứng dụng trong tiếp thị đa kênh"]},
+                {"tag": "p", "children": ["Hình ảnh tối ưu giúp tăng tốc độ tải trang web và cải thiện điểm Core Web Vitals rõ rệt. Tham khảo tài liệu kỹ thuật tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"}, "children": ["👉 Tiêu Chuẩn Tối Ưu Hình Ảnh Đa Nền Tảng Render Cloud"]},
+                    "."
+                ]}
+            ]
+        },
+        {
+            "id": "t2-art-08",
+            "title": "Bùng Nổ Thanh Toán Mã VietQR & Chuyển Đổi Số Cho Các Cửa Hàng Kinh Doanh 2026",
+            "target_satellites": [
+                {"name": "GitHub Pages (Nhà Đất Lào Cai)", "url": "https://nguyenhaithttsapa-rgb.github.io/nhadatlaocai-review/"},
+                {"name": "Replit Engine (Hub)", "url": "https://newsvetinh--laocaiview.replit.app"}
+            ],
+            "content_nodes": [
+                {"tag": "p", "children": ["Mã QR để bàn chuẩn VietQR đã trở thành hạ tầng thanh toán quen thuộc tại mọi quầy thu ngân từ nhà hàng, khách sạn đến quán cà phê trên toàn quốc."]},
+                {"tag": "h3", "children": ["1. Tăng tốc độ phục vụ và giảm thiểu thất thoát thu ngân"]},
+                {"tag": "p", "children": ["Việc tạo bảng mã VietQR có in sẵn logo thương hiệu và mã Wi-Fi giúp cửa hàng nâng tầm chuyên nghiệp trong mắt khách hàng. Đón đọc cẩm nang chuyển đổi số bán lẻ tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://nguyenhaithttsapa-rgb.github.io/nhadatlaocai-review/"}, "children": ["👉 Xu Hướng Số Hóa Điểm Bán Hàng & Mặt Bằng Kinh Doanh"]},
+                    "."
+                ]},
+                {"tag": "h3", "children": ["2. Kết nối hạ tầng thương mại không biên giới"]},
+                {"tag": "p", "children": ["Khám phá mạng lưới giải pháp số hỗ trợ doanh nghiệp kinh doanh đa lĩnh vực tại "]},
+                {"tag": "p", "children": [
+                    {"tag": "a", "attrs": {"href": "https://newsvetinh--laocaiview.replit.app"}, "children": ["👉 Trung Tâm Điều Phối Giải Pháp Số Master Hub"]},
                     "."
                 ]}
             ]

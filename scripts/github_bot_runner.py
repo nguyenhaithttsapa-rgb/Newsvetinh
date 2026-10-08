@@ -92,10 +92,17 @@ NETWORK_URLS = [
     "https://nguyenhaithttsapa-rgb.github.io/nhadatlaocai-review/"
 ]
 
-def check_url(url, timeout=10):
+def check_url(url, timeout=12):
     start = time.time()
     try:
-        req = urllib.request.Request(url, headers={'User-Agent': 'SatelliteMeshAuditor/4.0 (GitHubActionsCron)'})
+        req = urllib.request.Request(
+            url,
+            headers={
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 (Compatible; SatelliteMeshAuditor/4.0)',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+                'Accept-Language': 'vi,en-US;q=0.9,en;q=0.8'
+            }
+        )
         with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
             lat = int((time.time() - start) * 1000)
             return True, r.getcode(), lat, ""
