@@ -2,9 +2,9 @@ name: 24/7 Automation Mesh Bot (Audit & News Crawler)
 
 on:
   schedule:
-    # Chạy tự động mỗi 1 giờ (24 lần / ngày) trên Cloud của Microsoft
-    - cron: '0 * * * *'
-  workflow_dispatch: # Cho phép bấm chạy thủ công bất cứ lúc nào
+    # Chạy tự động vào đúng 6:00 Sáng mỗi ngày (Giờ Việt Nam GMT+7 = 23:00 UTC)
+    - cron: '0 23 * * *'
+  workflow_dispatch: # Cho phép bấm chạy thủ công bất cứ lúc nào trên giao diện GitHub
   push:
     paths:
       - 'scripts/github_bot_runner.py'

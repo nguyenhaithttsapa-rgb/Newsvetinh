@@ -29,6 +29,20 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
+# Tự động nạp file .env nội bộ nếu có
+_env_path = os.path.join(os.path.dirname(__file__), "..", ".env")
+if os.path.exists(_env_path):
+    try:
+        with open(_env_path, "r", encoding="utf-8") as _ef:
+            for _line in _ef:
+                _line = _line.strip()
+                if _line and not _line.startswith("#") and "=" in _line:
+                    _k, _v = _line.split("=", 1)
+                    if _k.strip() not in os.environ:
+                        os.environ[_k.strip()] = _v.strip()
+    except Exception:
+        pass
+
 INDEXNOW_KEY = "e89f2a41bc7d45e0892a5b6c3d1f8e90"
 INDEXNOW_KEY_LOCATION = f"https://newsvetinh.web.app/{INDEXNOW_KEY}.txt"
 INDEXNOW_HOST = "newsvetinh.web.app"
@@ -128,149 +142,31 @@ def run_target_audit():
 def generate_contextual_article():
     """
     Tạo bài viết chuẩn Semantic SEO với In-Content Contextual Anchors.
-    Bao quát cả 8 chủ đề tương ứng 8 website chính của người dùng.
+    Bao quát cả 8 chủ đề tương ứng 8 website chính của người dùng thông qua AI SEO Content Generator.
     """
-    print("\n[📰] KHỞI TẠO BÀI VIẾT NGỮ CẢNH CHUYÊN SÂU (IN-CONTENT CONTEXTUAL LINKS)...")
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    articles = [
-        {
-            "id": "art-01",
-            "hub": "laocaiview.vn",
+    print("\n[📰] KHỞI TẠO BÀI VIẾT NGỮ CẢNH CHUYÊN SÂU (AI SEO CONTENT GENERATOR v5.0)...")
+    try:
+        sys.path.append(os.path.dirname(__file__))
+        from ai_content_generator import generate_article_by_cluster
+        article = generate_article_by_cluster()
+        print(f"  ✓ Đã sinh bài viết mới: \"{article['title']}\"")
+        print(f"  ✓ Mục tiêu nhận lực: {article['target_hub']} ({article['target_badge']})")
+        print(f"  ✓ Anchor chính (Contextual): {article['primary_anchor']['text']} -> {article['primary_anchor']['url']}")
+        print(f"  ✓ Số anchor phụ liên kết chéo: {len(article['supporting_anchors'])} links")
+        return article
+    except Exception as e:
+        print(f"[!] Lỗi gọi AI Content Generator ({e}), chuyển sang chế độ dự phòng cơ bản.")
+        now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        return {
+            "id": f"art-fallback-{datetime.now().strftime('%Y%m%d%H%M')}",
             "title": "Bức Tranh Quy Hoạch Nghỉ Dưỡng Sa Pa 2026: Cơ Hội Vàng Cho Bất Động Sản Ven Thung Lũng Mường Hoa",
-            "summary": "Với đà hoàn thiện của các tuyến cao tốc huyết mạch và sự chuyển mình mạnh mẽ của du lịch Sa Pa, dòng vốn đầu tư bất động sản đang tập trung mạnh vào các khu vực sinh thái ven Mường Hoa và Tả Van.",
-            "content_html": """<p>Thị trường bất động sản du lịch Sa Pa đang bước vào giai đoạn bứt phá mạnh mẽ với hàng loạt dự án hạ tầng giao thông kết nối liên vùng được hoàn thiện. Du khách và nhà đầu tư có thể theo dõi biến động thị trường và giỏ hàng chuẩn pháp lý trực tiếp tại <a href="https://laocaiview.vn" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Bất động sản nghỉ dưỡng Sa Pa trên LaoCaiView</a>.</p>
-<p>Bên cạnh yếu tố địa lý, việc nâng tầm dịch vụ lưu trú homestay cũng tạo nên bước ngoặt lớn. Hiện nay, các chủ cơ sở kinh doanh tại bản Tả Phìn và Cát Cát đã tích cực trang bị bảng thanh toán <a href="https://www.taomaqr.online" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Tạo Mã QR Online VietQR</a> ngay tại quầy lễ tân để phục vụ khách du lịch không mang tiền mặt một cách thuận tiện.</p>
-<p>Sau những giờ khảo sát quỹ đất, du khách không nên bỏ lỡ trải nghiệm ẩm thực bản địa độc đáo tại <a href="https://angicungduoc.food" target="_blank" rel="noopener" class="text-emerald-400 font-bold hover:underline">Ăn Gì Cũng Được Food</a> với những món cá hồi, gà đen thắng cố nức tiếng vùng Tây Bắc.</p>""",
+            "summary": "Với đà hoàn thiện của các tuyến cao tốc huyết mạch và sự chuyển mình mạnh mẽ của du lịch Sa Pa, dòng vốn đầu tư bất động sản đang tập trung mạnh vào khu vực sinh thái ven Mường Hoa.",
+            "content_html": "<p>Phân tích thị trường BĐS Sa Pa 2026.</p>",
             "primary_anchor": {"text": "Bất động sản nghỉ dưỡng Sa Pa trên LaoCaiView", "url": "https://laocaiview.vn"},
-            "supporting_anchors": [
-                {"text": "Tạo Mã QR Online VietQR", "url": "https://www.taomaqr.online"},
-                {"text": "Ăn Gì Cũng Được Food", "url": "https://angicungduoc.food"}
-            ]
-        },
-        {
-            "id": "art-02",
-            "hub": "vongquaymayman.web.app",
-            "title": "Bí Quyết Tăng Trưởng Đột Phá Lượt Xem & Tương Tác Bán Hàng Livestream TikTok, Facebook 2026",
-            "summary": "Sử dụng vòng quay may mắn ngẫu nhiên chuẩn thuật toán CSPRNG giúp người bán hàng trực tuyến giữ chân người xem hàng giờ liền và nhân 5 lần tỷ lệ chốt đơn.",
-            "content_html": """<p>Trong kỷ nguyên thương mại điện tử qua video ngắn và livestream, việc duy trì sự chú ý của khách hàng là yếu tố sống còn. Hàng ngàn nhà sáng tạo nội dung đã áp dụng thành công tiện ích <a href="https://vongquaymayman.web.app" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Vòng Quay May Mắn Pro</a> với thuật toán Crypto CSPRNG hoàn toàn minh bạch, hỗ trợ tùy biến giao diện và âm thanh sống động.</p>
-<p>Để buổi livestream thêm phần chuyên nghiệp, các streamer thường tự thiết kế banner vòng quay, phông nền bắt mắt thông qua công cụ chỉnh sửa đồ họa trực tuyến <a href="https://quickpsd.com" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">QuickPsd Graphic Suite</a> mà không cần cài đặt phần mềm nặng nề.</p>
-<p>Đặc biệt, mỗi khi người xem trúng thưởng voucher hoặc quà tặng, chủ shop có thể in sẵn bảng quét mã từ <a href="https://www.taomaqr.online" target="_blank" rel="noopener" class="text-emerald-400 font-bold hover:underline">Mã QR Online VietQR</a> để thanh toán hoặc trả thưởng tích tắc chỉ với một thao tác chụp ảnh.</p>""",
-            "primary_anchor": {"text": "Vòng Quay May Mắn Pro", "url": "https://vongquaymayman.web.app"},
-            "supporting_anchors": [
-                {"text": "QuickPsd Graphic Suite", "url": "https://quickpsd.com"},
-                {"text": "Mã QR Online VietQR", "url": "https://www.taomaqr.online"}
-            ]
-        },
-        {
-            "id": "art-03",
-            "hub": "daodaoreview.com",
-            "title": "Top 10 Bộ Phim Hoạt Hình 3D Trung Quốc Đỉnh Cao Đáng Xem Nhất Mùa Thu Đông 2026",
-            "summary": "Đấu Phá Thương Khung, Phàm Nhân Tu Tiên, Thế Giới Hoàn Mỹ tiếp tục thống trị bảng xếp hạng hoạt hình 3D kỹ xảo đỉnh cao. Cùng phân tích cốt truyện chi tiết tại Đao Đao Review.",
-            "content_html": """<p>Thị trường hoạt hình 3D tiên hiệp và huyền huyễn những năm gần đây đã có những bước tiến vượt bậc về công nghệ đổ bóng và chuyển động nhân vật. Người hâm mộ có thể cập nhật nhanh các bài phân tích nhân vật, tóm tắt diễn biến tập mới nhất tại chuyên trang <a href="https://daodaoreview.com" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Đao Đao Review Anime 3D</a>.</p>
-<p>Bên cạnh việc đón xem các tập phim hấp dẫn, cộng đồng fanpage anime thường xuyên tổ chức các mini-game dự đoán tình tiết phim và quay số tặng quà người hâm mộ trên nền tảng <a href="https://vongquaymayman.web.app" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Vòng Quay May Mắn Trực Tuyến</a>.</p>""",
-            "primary_anchor": {"text": "Đao Đao Review Anime 3D", "url": "https://daodaoreview.com"},
-            "supporting_anchors": [
-                {"text": "Vòng Quay May Mắn Trực Tuyến", "url": "https://vongquaymayman.web.app"}
-            ]
-        },
-        {
-            "id": "art-04",
-            "hub": "angicungduoc.food",
-            "title": "Hành Trình Khám Phá Hương Vị Tây Bắc: Top Món Ngon Sa Pa 'Ăn Là Ghiền' Nhất Định Phải Thử",
-            "summary": "Từ nồi thắng cố nghi ngút khói giữa tiết trời se lạnh đến mẹt lợn cắp nách thơm lừng nướng than hoa, ẩm thực vùng cao luôn biết cách níu chân thực khách thập phương.",
-            "content_html": """<p>Đến với Sa Pa mờ sương, ngoài việc thưởng ngoạn phong cảnh ruộng bậc thang kỳ vĩ, hành trình khám phá ẩm thực vùng cao là trải nghiệm không thể bỏ qua. Hãy cùng tham khảo ngay cẩm nang ăn uống chất lượng tại <a href="https://angicungduoc.food" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Cẩm Nang Ẩm Thực Sa Pa Ăn Gì Cũng Được</a>.</p>
-<p>Nếu bạn đang lên kế hoạch cho chuyến đi du lịch dài ngày, hãy kết hợp xem ngày đẹp, giờ lành xuất hành trên tiện ích <a href="https://lichampro.com" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Lịch Âm Pro Vạn Niên</a> để chuyến đi thuận buồm xuôi gió.</p>
-<p>Bên cạnh đó, du khách yêu thích cảnh đẹp và mong muốn tìm kiếm chốn nghỉ dưỡng lâu dài có thể tìm hiểu thêm thông tin du lịch và lưu trú tại <a href="https://laocaiview.vn" target="_blank" rel="noopener" class="text-emerald-400 font-bold hover:underline">LaoCaiView Du Lịch & BĐS</a>.</p>""",
-            "primary_anchor": {"text": "Cẩm Nang Ẩm Thực Sa Pa Ăn Gì Cũng Được", "url": "https://angicungduoc.food"},
-            "supporting_anchors": [
-                {"text": "Lịch Âm Pro Vạn Niên", "url": "https://lichampro.com"},
-                {"text": "LaoCaiView Du Lịch & BĐS", "url": "https://laocaiview.vn"}
-            ]
-        },
-        {
-            "id": "art-05",
-            "hub": "lichampro.com",
-            "title": "Tra Cứu Ngày Hoàng Đạo & Hướng Xuất Hành Đại Cát Năm 2026 Cho Doanh Nhân Và Du Khách",
-            "summary": "Xem ngày tốt động thổ làm nhà, khai trương cửa hàng và xuất hành cầu tài lộc theo lịch vạn sự cổ truyền kết hợp thuật toán tính ngày chuẩn xác từng giây.",
-            "content_html": """<p>Việc chọn ngày lành tháng tốt, tra cứu tiết khí và các khung giờ hoàng đạo là nét đẹp văn hóa tâm linh lâu đời của người Á Đông. Để có kết quả chuẩn xác và giao diện dễ tra cứu trên điện thoại, hàng triệu người dùng tin tưởng sử dụng <a href="https://lichampro.com" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Lịch Âm Pro Vạn Niên Tra Cứu Ngày Tốt</a>.</p>
-<p>Đặc biệt với những ai đang chuẩn bị ký hợp đồng chuyển nhượng nhà đất hoặc đầu tư homestay tại Sa Pa, việc đối chiếu ngày giờ giao dịch cùng bảng giá thị trường tại <a href="https://laocaiview.vn" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Cổng thông tin LaoCaiView</a> sẽ giúp các thương vụ diễn ra suôn sẻ, tài lộc hanh thông.</p>""",
-            "primary_anchor": {"text": "Lịch Âm Pro Vạn Niên Tra Cứu Ngày Tốt", "url": "https://lichampro.com"},
-            "supporting_anchors": [
-                {"text": "Cổng thông tin LaoCaiView", "url": "https://laocaiview.vn"}
-            ]
-        },
-        {
-            "id": "art-06",
-            "hub": "tinhluonggrossnet.vn",
-            "title": "Cập Nhật Luật Thuế TNCN & Bảng Quy Đổi Lương Gross Sang Net 2026 Chuẩn Xác Nhất",
-            "summary": "Hướng dẫn chi tiết mức giảm trừ gia cảnh mới, tỷ lệ đóng bảo hiểm xã hội, y tế, thất nghiệp và công cụ tính toán lương thực nhận cho người lao động và HR.",
-            "content_html": """<p>Mỗi khi đàm phán hợp đồng lao động hay thỏa thuận chế độ đãi ngộ, việc hiểu rõ sự khác biệt giữa lương Gross và lương Net là vô cùng quan trọng. Bạn có thể sử dụng ngay công cụ trực tuyến <a href="https://tinhluonggrossnet.vn" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Tính Lương Gross Net 2026 Chuẩn Luật Thuế Mới</a> để tính toán chi tiết từng khoản giảm trừ trong chớp mắt.</p>
-<p>Đối với bộ phận kế toán và nhân sự doanh nghiệp, việc chi trả lương thưởng có thể tối ưu hóa quy trình thông qua việc quét mã chuyển khoản <a href="https://www.taomaqr.online" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Tạo Mã QR Online VietQR</a> nhằm hạn chế tối đa sai sót số tài khoản ngân hàng.</p>""",
-            "primary_anchor": {"text": "Tính Lương Gross Net 2026 Chuẩn Luật Thuế Mới", "url": "https://tinhluonggrossnet.vn"},
-            "supporting_anchors": [
-                {"text": "Tạo Mã QR Online VietQR", "url": "https://www.taomaqr.online"}
-            ]
-        },
-        {
-            "id": "art-07",
-            "hub": "quickpsd.com",
-            "title": "Thiết Kế Đồ Họa Nhanh Không Cần Cài Đặt: Giải Pháp Mở Tệp PSD Trực Tuyến Miễn Phí",
-            "summary": "Dễ dàng mở, chỉnh sửa layer và xuất file ảnh Photoshop PSD ngay trên trình duyệt web với bộ công cụ đồ họa trực quan QuickPsd Graphic Suite.",
-            "content_html": """<p>Đối với những người làm tiếp thị nội dung, chủ cửa hàng kinh doanh online hoặc freelancer cần chỉnh sửa nhanh banner quảng cáo mà máy tính không có sẵn Adobe Photoshop, công cụ <a href="https://quickpsd.com" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">QuickPsd Graphic Suite Trực Tuyến</a> chính là vị cứu tinh đắc lực, hỗ trợ đầy đủ layer, mask và xuất file chất lượng cao.</p>
-<p>Bạn cũng có thể tận dụng QuickPsd để tạo hình ảnh các ô quà tặng cực đẹp cho <a href="https://vongquaymayman.web.app" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Vòng Quay May Mắn Pro</a> phục vụ các chương trình bốc thăm trúng thưởng trên mạng xã hội.</p>""",
-            "primary_anchor": {"text": "QuickPsd Graphic Suite Trực Tuyến", "url": "https://quickpsd.com"},
-            "supporting_anchors": [
-                {"text": "Vòng Quay May Mắn Pro", "url": "https://vongquaymayman.web.app"}
-            ]
-        },
-        {
-            "id": "art-08",
-            "hub": "www.taomaqr.online",
-            "title": "Chuyển Đổi Số Thanh Toán Không Tiền Mặt: Tạo Mã VietQR Chuẩn NAPAS247 Để Bàn Siêu Đẹp",
-            "summary": "Giải pháp tạo mã QR động và tĩnh có gắn logo thương hiệu, định dạng số tiền thanh toán chính xác, giúp cửa hàng và quán cafe hạn chế thất thoát doanh thu.",
-            "content_html": """<p>Hình thức quét mã chuyển khoản ngân hàng đang dần thay thế hoàn toàn tiền mặt tại các điểm bán lẻ, quán ăn và homestay trên toàn quốc. Nhằm giúp các chủ cơ sở tạo ra những bảng mã chuyên nghiệp có sẵn thông tin tài khoản và logo, dịch vụ <a href="https://www.taomaqr.online" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">Tạo Mã QR Online VietQR Để Bàn Miễn Phí</a> đã ra đời và được đông đảo hộ kinh doanh tin dùng.</p>
-<p>Tại các điểm đến du lịch như Sa Pa, các chủ cơ sở kết hợp giới thiệu sản phẩm dịch vụ trên <a href="https://laocaiview.vn" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">Cổng thông tin LaoCaiView</a> và nhận đặt cọc phòng nhanh chóng qua mã VietQR để bàn rất hiệu quả.</p>""",
-            "primary_anchor": {"text": "Tạo Mã QR Online VietQR Để Bàn Miễn Phí", "url": "https://www.taomaqr.online"},
-            "supporting_anchors": [
-                {"text": "Cổng thông tin LaoCaiView", "url": "https://laocaiview.vn"}
-            ]
+            "supporting_anchors": [{"text": "Tạo Mã QR Online VietQR", "url": "https://www.taomaqr.online"}],
+            "published_at": now_str,
+            "status": "in_content_active"
         }
-    ]
-
-    # Chọn luân phiên thông minh theo giờ để nội dung luôn biến đổi và dàn trải lực đều cho 8 web
-    curr_hour = datetime.now().hour
-    selected_idx = curr_hour % len(articles)
-    selected_art = articles[selected_idx]
-    selected_art["published_at"] = now_str
-    selected_art["status"] = "in_content_active"
-
-    # Schema.org Linked Data JSON-LD
-    selected_art["schema_jsonld"] = {
-        "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "headline": selected_art["title"],
-        "description": selected_art["summary"],
-        "datePublished": datetime.now().isoformat(),
-        "dateModified": datetime.now().isoformat(),
-        "mainEntityOfPage": "https://newsvetinh.web.app/",
-        "author": {
-            "@type": "Organization",
-            "name": "Satellite Mesh Network Hub",
-            "url": "https://newsvetinh.web.app"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "LaoCaiView Digital Ecosystem",
-            "url": "https://laocaiview.vn",
-            "sameAs": [t["url"] for t in TARGET_HUBS]
-        }
-    }
-
-    print(f"  ✓ Đã sinh bài viết mới: \"{selected_art['title']}\"")
-    print(f"  ✓ Anchor chính (Contextual): {selected_art['primary_anchor']['text']} -> {selected_art['primary_anchor']['url']}")
-    print(f"  ✓ Số anchor phụ liên kết chéo: {len(selected_art['supporting_anchors'])} links")
-    return selected_art
 
 def submit_indexnow(urls=None):
     """
