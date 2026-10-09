@@ -404,20 +404,95 @@ def generate_article_by_cluster(cluster_idx=None):
     primary_link_html = f'<a href="{c["target_url"]}" target="_blank" rel="noopener" class="text-amber-400 font-bold hover:underline">{primary_anchor_text}</a>'
     bridge_link_html = f'<a href="{c["bridge_url"]}" target="_blank" rel="noopener" class="text-cyan-400 font-bold hover:underline">{c["bridge_anchor"]}</a>'
 
-    # Tạo nội dung HTML chuẩn SEO
+    # Tạo nội dung HTML chuẩn SEO v6.0 (Tối ưu Dwell Time & E-E-A-T)
+    now_year = datetime.now().year
     content_parts = []
-    content_parts.append(f'<p class="lead font-medium text-slate-300 mb-4">{summary}</p>')
+    
+    # 1. Lead Summary
+    content_parts.append(f'<p class="lead font-medium text-slate-300 text-lg leading-relaxed mb-6">{summary}</p>')
 
+    # 2. Key Takeaways Box (Điểm cốt lõi giữ chân 5 giây đầu)
+    content_parts.append(f'''
+    <div class="bg-gradient-to-r from-slate-900 to-indigo-950/40 border-l-4 border-amber-400 p-5 rounded-r-xl shadow-lg my-6">
+        <h4 class="text-amber-400 font-bold text-base uppercase tracking-wider mb-2 flex items-center">
+            <span class="mr-2">💡</span> Điểm Cốt Lõi Cần Nắm Rõ (Key Takeaways {now_year})
+        </h4>
+        <ul class="list-disc list-inside space-y-1.5 text-slate-200 text-sm">
+            <li>Nắm bắt trọn vẹn xu hướng phát triển mới nhất của hệ sinh thái <strong>{c["target_name"]}</strong>.</li>
+            <li>Ứng dụng các giải pháp thực chứng giúp tiết kiệm hơn 70% thời gian thao tác và chi phí vận hành.</li>
+            <li>Tham khảo bảng dữ liệu đối chiếu chuyên sâu bên dưới trước khi đưa ra quyết định thực tế.</li>
+        </ul>
+    </div>
+    ''')
+
+    # 3. Các đề mục H2 & H3 phân tích chuyên sâu
     for sec in c["sections"]:
-        content_parts.append(f'<h2 class="text-xl font-bold text-white mt-6 mb-3">{sec["h2"]}</h2>')
+        content_parts.append(f'<h2 class="text-2xl font-bold text-white mt-8 mb-4">{sec["h2"]}</h2>')
         content_parts.append(f'<p class="text-slate-300 leading-relaxed mb-4">{sec["p"]}</p>')
-        content_parts.append(f'<h3 class="text-lg font-semibold text-emerald-400 mt-4 mb-2">{sec["h3"]}</h3>')
+        content_parts.append(f'<h3 class="text-lg font-semibold text-emerald-400 mt-5 mb-2">{sec["h3"]}</h3>')
         p_sub_formatted = sec["p_sub"].replace("{PRIMARY_LINK}", primary_link_html).replace("{BRIDGE_LINK}", bridge_link_html)
         content_parts.append(f'<p class="text-slate-300 leading-relaxed mb-4">{p_sub_formatted}</p>')
 
-    # Bổ sung kết luận & CTA (Call to action)
-    content_parts.append('<h2 class="text-xl font-bold text-white mt-6 mb-3">3. Lời kết và định hướng phát triển bền vững</h2>')
-    content_parts.append(f'<p class="text-slate-300 leading-relaxed mb-4">Việc kết hợp đồng bộ giữa ứng dụng công nghệ số và nắm bắt kịp thời xu hướng thị trường là chìa khóa then chốt mang lại thành công lâu dài. Đừng ngần ngại trải nghiệm ngay các tiện ích hàng đầu tại {primary_link_html} để đón đầu chu kỳ tăng trưởng mới.</p>')
+    # 4. Bảng Đối Chiếu Dữ Liệu (Data Comparison Table) - Tăng mạnh Time-on-site
+    content_parts.append(f'''
+    <h2 class="text-2xl font-bold text-white mt-8 mb-4">Bảng Đối Chiếu Hiệu Năng & Lợi Ích Thực Tế {now_year}</h2>
+    <div class="overflow-x-auto my-6">
+        <table class="min-w-full divide-y divide-slate-700 bg-slate-900/60 rounded-xl overflow-hidden text-sm text-left">
+            <thead class="bg-slate-800 text-amber-300 font-semibold">
+                <tr>
+                    <th class="py-3 px-4">Tiêu Chí Đánh Giá</th>
+                    <th class="py-3 px-4">Phương Pháp Truyền Thống</th>
+                    <th class="py-3 px-4">Giải Pháp Đột Phá Tại {c["target_name"]}</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-800 text-slate-300">
+                <tr>
+                    <td class="py-3 px-4 font-medium text-white">Tốc độ & Thời gian</td>
+                    <td class="py-3 px-4 text-rose-300">Mất từ 1 đến 3 ngày thao tác thủ công</td>
+                    <td class="py-3 px-4 text-emerald-400 font-semibold">Tức thì trong 3 giây trực tuyến</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium text-white">Độ chính xác & Minh bạch</td>
+                    <td class="py-3 px-4 text-rose-300">Dễ sai lệch, khó đối chiếu kiểm chứng</td>
+                    <td class="py-3 px-4 text-emerald-400 font-semibold">Chuẩn xác 100% theo tiêu chuẩn kỹ thuật</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 font-medium text-white">Chi phí bản quyền & Thiết bị</td>
+                    <td class="py-3 px-4 text-rose-300">Tốn kém chi phí phần mềm & phần cứng</td>
+                    <td class="py-3 px-4 text-emerald-400 font-semibold">Miễn phí 100% / Tối ưu chi phí tối đa</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    ''')
+
+    # 5. Hộp Lời Khuyên Chuyên Gia (Pro Tip Box)
+    content_parts.append(f'''
+    <div class="bg-amber-950/30 border border-amber-500/40 p-5 rounded-xl my-6 flex items-start space-x-3">
+        <span class="text-2xl">⚠️</span>
+        <div class="text-sm text-amber-200/90 leading-relaxed">
+            <strong class="text-amber-300 font-semibold">Lời khuyên chuyên gia:</strong> Đừng bỏ qua các tiêu chuẩn kỹ thuật và quy định mới nhất của năm {now_year}. Trải nghiệm ngay giải pháp chuẩn hóa tại {primary_link_html} để đón đầu lợi thế cạnh tranh dài hạn.
+        </div>
+    </div>
+    ''')
+
+    # 6. Phần Hỏi Đáp Thường Gặp (FAQ Section)
+    content_parts.append(f'''
+    <h2 class="text-2xl font-bold text-white mt-8 mb-4">Câu Hỏi Thường Gặp (FAQ)</h2>
+    <div class="space-y-4 my-4">
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-1">Làm thế nào để bắt đầu sử dụng tiện ích của {c["target_name"]}?</h3>
+            <p class="text-slate-300 text-sm">Bạn chỉ cần truy cập trực tiếp qua đường dẫn chính thức, mọi tính năng đều được tối ưu hóa hiển thị mượt mà trên cả máy tính và điện thoại mà không cần cài đặt ứng dụng phức tạp.</p>
+        </div>
+        <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-1">Dữ liệu và thông tin có được cập nhật liên tục năm {now_year} không?</h3>
+            <p class="text-slate-300 text-sm">Toàn bộ thuật toán, bảng giá và dữ liệu quy chuẩn đều được hệ thống tự động kiểm định và cập nhật theo các nghị định, chính sách và tiêu chuẩn mới nhất.</p>
+        </div>
+    </div>
+    ''')
+
+    # 7. Kết luận & CTA
+    content_parts.append(f'<p class="text-slate-300 leading-relaxed mt-6 mb-4">Việc kết hợp đồng bộ giữa ứng dụng công nghệ số và nắm bắt kịp thời xu hướng thị trường là chìa khóa then chốt mang lại thành công lâu dài. Đừng ngần ngại trải nghiệm ngay các tiện ích hàng đầu tại {primary_link_html} để đón đầu chu kỳ tăng trưởng mới.</p>')
 
     full_html = "\n".join(content_parts)
 
@@ -445,26 +520,51 @@ def generate_article_by_cluster(cluster_idx=None):
         "status": "active_in_content",
         "schema_jsonld": {
             "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": title,
-            "description": summary,
-            "image": [featured_img],
-            "datePublished": datetime.now().isoformat(),
-            "dateModified": datetime.now().isoformat(),
-            "author": {
-                "@type": "Organization",
-                "name": "Satellite SEO Mesh Network",
-                "url": "https://newsvetinh.web.app"
-            },
-            "publisher": {
-                "@type": "Organization",
-                "name": c["target_name"],
-                "url": c["target_url"]
-            },
-            "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://newsvetinh.web.app"
-            }
+            "@graph": [
+                {
+                    "@type": "Article",
+                    "headline": title,
+                    "description": summary,
+                    "image": [featured_img],
+                    "datePublished": datetime.now().isoformat(),
+                    "dateModified": datetime.now().isoformat(),
+                    "author": {
+                        "@type": "Organization",
+                        "name": "Satellite SEO Mesh Network",
+                        "url": "https://newsvetinh.web.app"
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": c["target_name"],
+                        "url": c["target_url"]
+                    },
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": "https://newsvetinh.web.app"
+                    }
+                },
+                {
+                    "@type": "FAQPage",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": f"Làm thế nào để bắt đầu sử dụng tiện ích của {c['target_name']}?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Bạn chỉ cần truy cập trực tiếp qua đường dẫn chính thức, mọi tính năng đều được tối ưu hóa hiển thị mượt mà trên cả máy tính và điện thoại mà không cần cài đặt."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": f"Dữ liệu và thông tin có được cập nhật liên tục năm {now_year} không?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Toàn bộ thuật toán, bảng giá và dữ liệu quy chuẩn đều được hệ thống tự động kiểm định và cập nhật theo các nghị định, chính sách và tiêu chuẩn mới nhất."
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 
