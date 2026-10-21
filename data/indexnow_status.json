@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20 01:27:29",
+  "timestamp": "2026-10-21 01:11:36",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 663,
+      "latency": 642,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 498,
+      "latency": 362,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,19 +24,19 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 731,
+      "latency": 180,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 30,
+      "latency": 58,
       "success": false
     }
   ],
   "tier2_latest": {
     "title": "Bức Tranh Bất Động Sản Sa Pa 2026: Đòn Bẩy Hạ Tầng & Dòng Tiền Du Lịch Bứt Phá",
-    "url": "https://telegra.ph/Bức-Tranh-Bất-Động-Sản-Sa-Pa-2026-Đòn-Bẩy-Hạ-Tầng--Dòng-Tiền-Du-Lịch-Bứt-Phá-10-20",
+    "url": "https://telegra.ph/Bức-Tranh-Bất-Động-Sản-Sa-Pa-2026-Đòn-Bẩy-Hạ-Tầng--Dòng-Tiền-Du-Lịch-Bứt-Phá-10-21",
     "target_satellites": [
       {
         "name": "GitHub Pages (BĐS Sa Pa)",
@@ -47,7 +47,7 @@
         "url": "https://nguyenhaithttsapa-rgb.github.io/nhadatlaocai-review/"
       }
     ],
-    "published_at": "2026-10-20 01:27:27",
+    "published_at": "2026-10-21 01:11:34",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
