@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-05 03:01:38",
+  "timestamp": "2026-11-06 03:02:24",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 756,
+      "latency": 631,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 485,
+      "latency": 424,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,19 +24,19 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 190,
+      "latency": 93,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 20,
+      "latency": 34,
       "success": false
     }
   ],
   "tier2_latest": {
     "title": "Giải Pháp Ứng Dụng Thuật Toán CSPRNG & Vòng Quay May Mắn Giữ Chân Người Xem Livestream",
-    "url": "https://telegra.ph/Giải-Pháp-Ứng-Dụng-Thuật-Toán-CSPRNG--Vòng-Quay-May-Mắn-Giữ-Chân-Người-Xem-Livestream-11-05",
+    "url": "https://telegra.ph/Giải-Pháp-Ứng-Dụng-Thuật-Toán-CSPRNG--Vòng-Quay-May-Mắn-Giữ-Chân-Người-Xem-Livestream-11-06",
     "target_satellites": [
       {
         "name": "Netlify Global (Ecolodge)",
@@ -47,7 +47,7 @@
         "url": "https://newsvetinh--laocaiview.replit.app"
       }
     ],
-    "published_at": "2026-11-05 03:01:36",
+    "published_at": "2026-11-06 03:02:23",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
