@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-24 06:40:56",
+  "timestamp": "2026-11-25 05:11:54",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 1293,
+      "latency": 1243,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 446,
+      "latency": 511,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,30 +24,30 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 250,
+      "latency": 209,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 91,
+      "latency": 76,
       "success": false
     }
   ],
   "tier2_latest": {
-    "title": "Xu Hướng Thiết Kế Đồ Họa Đám Mây: Chỉnh Sửa Trực Tiếp Trên Trình Duyệt Không Cần Cài Đặt",
-    "url": "https://telegra.ph/Xu-Hướng-Thiết-Kế-Đồ-Họa-Đám-Mây-Chỉnh-Sửa-Trực-Tiếp-Trên-Trình-Duyệt-Không-Cần-Cài-Đặt-11-24",
+    "title": "Tối Ưu Chi Phí Nhân Sự & Biểu Thuế Thu Nhập Cá Nhân 2026 Cho Doanh Nghiệp Trẻ",
+    "url": "https://telegra.ph/Tối-Ưu-Chi-Phí-Nhân-Sự--Biểu-Thuế-Thu-Nhập-Cá-Nhân-2026-Cho-Doanh-Nghiệp-Trẻ-11-25",
     "target_satellites": [
       {
-        "name": "Cloudflare Edge (Tour Sa Pa)",
-        "url": "https://sapa-tour-3n2d.laocaiview-vn.workers.dev/danh-gia-thuat-toan-crypto-csprng-vongquaymayman-web-app.html"
+        "name": "Vercel Cloud (Mùa Vàng)",
+        "url": "https://sapa-travel-experience.vercel.app/"
       },
       {
-        "name": "Render Cloud (Fansipan & BĐS)",
-        "url": "https://lao-cai-view-ve-fansipan-and-bat-dong.onrender.com/index.html"
+        "name": "Netlify Global (Ecolodge)",
+        "url": "https://sapa-travel-experience.netlify.app/"
       }
     ],
-    "published_at": "2026-11-24 06:40:54",
+    "published_at": "2026-11-25 05:11:51",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
