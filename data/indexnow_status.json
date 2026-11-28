@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 04:43:01",
+  "timestamp": "2026-11-28 04:27:30",
   "key": "e89f2a41bc7d45e0892a5b6c3d1f8e90",
   "submitted_urls": 17,
   "results": [
@@ -7,7 +7,7 @@
       "endpoint": "IndexNow Global Engine",
       "url": "https://api.indexnow.org/indexnow",
       "status_code": 200,
-      "latency": 657,
+      "latency": 671,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     },
@@ -15,7 +15,7 @@
       "endpoint": "Microsoft Bing IndexNow",
       "url": "https://www.bing.com/indexnow",
       "status_code": 200,
-      "latency": 671,
+      "latency": 428,
       "success": true,
       "message": "Đã tiếp nhận yêu cầu lập chỉ mục tức thì (200/202)"
     }
@@ -24,19 +24,19 @@
     {
       "engine": "Google Ping",
       "status_code": 404,
-      "latency": 99,
+      "latency": 102,
       "success": false
     },
     {
       "engine": "Bing Ping",
       "status_code": 410,
-      "latency": 45,
+      "latency": 47,
       "success": false
     }
   ],
   "tier2_latest": {
     "title": "Sức Hút Hoạt Hình 3D Tiên Hiệp: Đột Phá Đồ Họa Unreal Engine & Cốt Truyện Kinh Điển",
-    "url": "https://telegra.ph/Sức-Hút-Hoạt-Hình-3D-Tiên-Hiệp-Đột-Phá-Đồ-Họa-Unreal-Engine--Cốt-Truyện-Kinh-Điển-11-27",
+    "url": "https://telegra.ph/Sức-Hút-Hoạt-Hình-3D-Tiên-Hiệp-Đột-Phá-Đồ-Họa-Unreal-Engine--Cốt-Truyện-Kinh-Điển-11-28",
     "target_satellites": [
       {
         "name": "Replit Engine (Hub)",
@@ -47,7 +47,7 @@
         "url": "https://sapa-photospots.nguyenhaithttsapa-rgb.deno.net/"
       }
     ],
-    "published_at": "2026-11-27 04:42:59",
+    "published_at": "2026-11-28 04:27:28",
     "platform": "Telegra.ph (Telegram API - DA 91)"
   }
 }
